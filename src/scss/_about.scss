@@ -1,0 +1,97 @@
+.about-bg {
+  position: relative;
+  background-image: url(../img/bg-about.jpg);
+  width: 100%;
+  height: 700px;
+  background-repeat: no-repeat;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    background-color: #1e2633;
+    opacity: 0.5;
+  }
+  &__title {
+    position: absolute;
+    z-index: 111;
+    bottom: 100px;
+  }
+}
+
+.about__history {
+  border-bottom: 1px solid #ebebeb;
+}
+
+.goals {
+  padding: 100px 0 300px;
+  border-bottom: 1px solid #ebebeb;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__info {
+    margin-left: 135px;
+    text-align: right;
+    width: 320px;
+  }
+  &__img {
+    margin-right: 127px;
+    position: relative;
+    .img-left {
+      position: absolute;
+      top: 230px;
+      left: -58px;
+    }
+  }
+}
+
+.more-about {
+  padding: 100px 0;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__imgs {
+    img + img {
+      margin-left: -224px;
+    }
+    img {
+			position: relative;
+			&::before{
+				content: '';
+				position: absolute;
+				width: 100%;
+				height: auto;
+				background-color: rgba(30, 38, 51, 0.2);
+			}
+			&:hover{
+				transition: 1s;
+				z-index: 2;
+				transform: scale(1.2);
+			}
+    }
+  }
+  .schedule {
+    text-align: center;
+    color: #1e2633;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 30px 57px;
+    border: 3px solid #edeff2;
+    &__title {
+      font-size: 14px;
+      color: #985e5b;
+      font-weight: 700;
+      letter-spacing: 1.4px;
+      margin-bottom: 26px;
+    }
+    &__weekdays {
+      margin-bottom: 35px;
+		}
+		.days{
+			margin-bottom: 13px;
+		}
+  }
+}

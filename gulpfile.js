@@ -10,7 +10,7 @@ let gulp = require ('gulp'),
     rename = require('gulp-rename'), //переименовывает файлы, добавляет им префиксы и суффиксы
     imagemin = require('gulp-imagemin'), //пережимает изображения
     recompress = require('imagemin-jpeg-recompress'), //тоже пережимает, но лучше. Плагин для плагина
-    uglify = require('gulp-uglify'), //то же, что cssmin, только для js
+    uglify = require('gulp-terser'), //то же, что cssmin, только для js
     concat = require('gulp-concat'), //склеивает css и js-файлы в один
     del = require('del'), //удаляет указанные файлы и директории. Нужен для очистки перед билдом.
     sourcemaps = require('gulp-sourcemaps'); //рисует карту слитого воедино файла, чтобы было понятно, что из какого файла бралось
@@ -46,7 +46,7 @@ let gulp = require ('gulp'),
         'node_modules/@fortawesome/fontawesome-free/css/all.css',
         'node_modules/slick-carousel/slick/slick.css',
         'node_modules/slick-carousel/slick/slick-theme.css',
-        'node_modules/jquery.flipster/dist/jquery.flipster.min.css'
+        'node_modules/jquery.flipster/dist/jquery.flipster.css'
       ])
       .pipe(sourcemaps.init())
       .pipe(concat('libs.min.css')) //склеиваем их в один файл с указанным именем
@@ -57,10 +57,10 @@ let gulp = require ('gulp'),
 
     gulp.task('script', function(){ //аналогично поступаем с js-файлами
       return gulp.src([ //тут подключаем разные js в общую библиотеку. Отключите то, что вам не нужно.
-        'node_modules/jquery/dist/jquery.js',
         'node_modules/@fortawesome/fontawesome-free/js/all.js',
         'node_modules/slick-carousel/slick/slick.js',
-        'node_modules/jquery.flipster/dist/jquery.flipster.min.js'
+        'node_modules/jquery.flipster/dist/jquery.flipster.min.js',
+        'node_modules/headhesive/dist/headhesive.min.js'
       ])
       .pipe(sourcemaps.init())
       .pipe(concat('libs.min.js'))
@@ -99,30 +99,6 @@ let gulp = require ('gulp'),
       .pipe(browserSync.reload({stream:true}));
     });
 
-    // gulp.task('favicons', function(){ //генератор favicon для всех устройств. Запускается вручную отдельной командой. Генерирует фавиконки на все случаи жизни и файл favicons.html, в котором находятся подключения этих иконок. Скопируйте подключения в файлы проекта и удалите favicons.html Больше нужно для веб-приложений, потому что их ярлыки выносят на главный экран. Сайтам же достаточно закинуть и подключить одну favicon.ico Короче, если вы не уверены, что большинство пользователей мобильных устройств запихнут ярлык вашего сайта на главный экран и разрешат push-уведомления в телефоне, ваша фамилия не Цукерберг и не Дуров - вам этот таск, скорее всего не нужен.
-    //   return gulp.src('src/img/favicon/favicon.png')
-    //   .pipe(favgen({
-    //     appName: 'My App',
-    //     appShortName: 'App',
-    //     appDescription: 'This is my application',
-    //     developerName: 'Hayden Bleasel',
-    //     developerURL: 'http://haydenbleasel.com/',
-    //     background: '#020307',
-    //     path: 'favicons/',
-    //     url: 'http://haydenbleasel.com/',
-    //     display: 'standalone',
-    //     orientation: 'portrait',
-    //     scope: '/',
-    //     start_url: '/?homescreen=1',
-    //     version: 1.0,
-    //     logging: false,
-    //     html: 'favicons.html',
-    //     pipeHTML: true,
-    //     replace: true,
-    //   })
-    //   )
-    //   .pipe(gulp.dest('src/'));
-    // });
 
     gulp.task('images', function(){ //пережимаем изображения и складываем их в директорию build
       return gulp.src('src/img/**/*.+(png|jpg|jpeg|gif|svg|ico)')

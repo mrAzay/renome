@@ -13,7 +13,6 @@ body {
   height: 100%;
   position: relative;
   font-family: "Montserrat", sans-serif;
-  overflow-x: hidden;
 }
 
 ul {
@@ -28,6 +27,18 @@ li {
 .container {
   max-width: 1180px;
   margin: 0 auto;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.content {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
 }
 
 .title {
@@ -55,4 +66,21 @@ li {
   font-weight: 600;
   line-height: 30px;
   letter-spacing: 1.8px;
+}
+
+.flipster--coverflow .flipster__item__content {
+  box-reflect: inherit !important;
+  -webkit-box-reflect: inherit !important;
+}
+
+
+.bg__text {
+  font-size: 50px;
+  color: #fff;
+  font-family: Axis;
+}
+.bg__subtext {
+  color: #985e5b;
+  font-size: 30px;
+  font-weight: 700;
 }

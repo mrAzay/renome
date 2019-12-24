@@ -1,19 +1,47 @@
 $(function () {
-	
-	$('.dropdown-button').click(function() {
-		$('.sub-menu__list').toggle();
-		$('.nav-mobile__list').toggle();
-	});
 
-	$('.humburger').click(function() {
-		$('.nav-mobile__list').toggle();
-		if($('.sub-menu__list').css('display') == "block"){
-			$('.nav-mobile__list').css('display', 'none');
-			$('.sub-menu__list').css('display', 'none');
+
+	var lastScrollTop = 0;
+	$(window).scroll(function (event) {
+		var st = $(this).scrollTop();
+
+
+		if (st > lastScrollTop) {
+			$(".header__inner").css('padding', '10px 0');
+			$(".sub-menu__list").css('top', '10px');
+			$(".cart__dropdown").css('top', '10px');
+		} else {
+			$(".header__inner").css('padding', '36px 0');
+			$(".sub-menu__list").css('top', '15px');
+			$(".cart__dropdown").css('top', '18px');
 		}
+
+		if( st > 550){
+			$('#header-trans').removeClass('header-trans');
+	
+		} else {
+			$('#header-trans').addClass('header-trans');
+		}
+
+
+		lastScrollTop = st;
+
+
 	});
 
-	
+	$('#header-trans').addClass('header-trans');
+
+	$(function () {
+		var location = window.location.href;
+		var cur_url = '/' + location.split('/').pop();
+
+		$('.nav__item').each(function () {
+			var link = $(this).find('a').attr('href');
+			if (cur_url == link) {
+				$(this).addClass('page-active');
+			}
+		});
+	});
 
 	$('.nav__item').hover(function () {
 		$(this).children('ul').stop(false, true).fadeIn(300);
@@ -26,12 +54,12 @@ $(function () {
 		$(this).children('ul').stop(false, true).fadeOut(300);
 	});
 
-	$('.search').click(function (){
+	$('.search').click(function () {
 		$('.container-none').css('display', 'none');
 		$('.header-search').css('display', 'block');
 	});
 
-	$('.header-search__close').click(function (){
+	$('.header-search__close').click(function () {
 		$('.header-search').css('display', 'none');
 		$('.container-none').css('display', 'block');
 	});
@@ -53,8 +81,7 @@ $(function () {
 		// Selector for children of `itemContainer` to flip
 		start: 0,
 
-
-		fadeIn: 400,
+		fadeIn: 600,
 		// [milliseconds]
 		// Speed of the fade in animation after items have been setup
 
@@ -83,7 +110,7 @@ $(function () {
 		// [true|false]
 		// Clicking an item switches to that item
 
-		keyboard: true,
+		keyboard: false,
 		// [true|false]
 		// Enable left/right arrow navigation
 
@@ -120,3 +147,5 @@ $(function () {
 	});
 
 });
+
+
