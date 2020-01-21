@@ -46,7 +46,8 @@ let gulp = require ('gulp'),
         'node_modules/@fortawesome/fontawesome-free/css/all.css',
         'node_modules/slick-carousel/slick/slick.css',
         'node_modules/slick-carousel/slick/slick-theme.css',
-        'node_modules/jquery.flipster/dist/jquery.flipster.css'
+        'node_modules/jquery.flipster/dist/jquery.flipster.css',
+        'node_modules/flatpickr/dist/flatpickr.min.css'
       ])
       .pipe(sourcemaps.init())
       .pipe(concat('libs.min.css')) //склеиваем их в один файл с указанным именем
@@ -60,7 +61,8 @@ let gulp = require ('gulp'),
         'node_modules/@fortawesome/fontawesome-free/js/all.js',
         'node_modules/slick-carousel/slick/slick.js',
         'node_modules/jquery.flipster/dist/jquery.flipster.min.js',
-        'node_modules/headhesive/dist/headhesive.min.js'
+        'node_modules/headhesive/dist/headhesive.min.js',
+        'node_modules/flatpickr/dist/flatpickr.min.js'
       ])
       .pipe(sourcemaps.init())
       .pipe(concat('libs.min.js'))
