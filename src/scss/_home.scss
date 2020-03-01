@@ -174,15 +174,13 @@
   background-color: $background-color;
   &__inner {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-bottom: 170px;
   }
   &__img {
-    margin-left: 117px;
     margin-top: -120px;
   }
   &__info {
-    margin-right: 116px;
     margin-top: 180px;
     color: #1e2633;
     font-size: 25px;
@@ -256,7 +254,7 @@
     }
   }
 }
-.order {
+.order-btn {
   background-image: url(../img/order__bg.png);
   height: 200px;
   display: flex;
@@ -369,61 +367,6 @@
       position: absolute;
       top: -141px;
       left: 105px;
-    }
-  }
-}
-.footer {
-  background-color: $background-color;
-  &__inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 29px 0;
-  }
-  &__logo {
-    color: #1e2633;
-    font-family: Pacifico;
-    font-size: 20px;
-    letter-spacing: 2px;
-    padding-right: 178px;
-  }
-  &__copyright {
-    color: #1e2633;
-    font-family: Axis;
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 0.6px;
-  }
-  &__social {
-    li {
-      display: inline-block;
-      + li {
-        margin-right: 10px;
-      }
-    }
-    .facebook {
-      padding: 10px 15px;
-    }
-    .twitter {
-      padding: 10px 11px;
-    }
-    .google {
-      padding: 10px;
-    }
-    .social-text {
-      margin-right: 16px;
-      color: #1e2633;
-      font-size: 12px;
-      font-weight: 700;
-      line-height: 25px;
-      text-transform: uppercase;
-    }
-    .social-link {
-      border: 2px solid #000;
-      border-radius: 50%;
-      a {
-        color: #1e2633;
-      }
     }
   }
 }

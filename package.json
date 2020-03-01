@@ -7,10 +7,10 @@
     "flatpickr": "^4.6.3",
     "headhesive": "^1.2.4",
     "jquery.flipster": "^1.1.4",
+    "lightgallery": "^1.6.12",
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.11.2",
     "browser-sync": "^2.26.7",
     "del": "^5.1.0",
     "gulp": "^4.0.2",

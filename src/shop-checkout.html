@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./components/_head.html')
+
+<body>
+	<div class="wrapper">
+
+
+		<div class="content">
+
+			@@include('./components/_header-trans.html')
+			<main>
+				<section class="checkout-bg">
+					<div class="container">
+						<div class="checkout-bg__inner bg__inner">
+							<div class="checkout-bg__text bg__text">
+								<div class="checkout__title bg__title">checkout</div>
+								<div class="checkout__subtitle bg__subtitle">our products </div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="form-section">
+					<form action="" class="form">
+
+
+						<div class="form__content billing">
+							<div class="container">
+								<div class="form__title">billing</div>
+								<div class="container-small">
+									<div class="form__inner billing__inner">
+
+										<label class="billing__country form__country">
+											<div class="form__subtitle">country*</div>
+											<select class="form-input" name="billing__country">
+												<option value="1">United Kingdom (UK)</option>
+												<option value="1">USA</option>
+												<option value="1">China</option>
+											</select>
+										</label>
+										<label class="billing__first-name form__first-name">
+											<div class="form__subtitle">first name*</div>
+											<input class="form-input" type="text">
+										</label>
+										<label class="billing__last-name form__last-name">
+											<div class="form__subtitle">last name*</div>
+											<input class="form-input" type="text">
+										</label>
+										<label class="billing__company-name form__company-name">
+											<div class="form__subtitle">company name</div>
+											<input class="form-input" type="text">
+										</label>
+										<label class="billing__address form__address">
+											<div class="form__subtitle">address*</div>
+											<input class="form-input" type="text" placeholder="Street address">
+											<input class="form-input" type="text" placeholder="Apartment, Suite, Unite etc. (optional)">
+										</label>
+										<label class="billing__city form__city">
+											<div class="form__subtitle">Town / City*</div>
+											<input class="form-input" type="text" placeholder="Town / City">
+										</label>
+										<label class="billing__county form__county">
+											<div class="form__subtitle">county</div>
+											<input class="form-input" type="text">
+										</label>
+										<label class="billing__postcode form__postcode">
+											<div class="form__subtitle">Postcode</div>
+											<input class="form-input" type="text" placeholder="Postcode">
+										</label>
+										<label class="billing__email form__email">
+											<div class="form__subtitle">Email Address*</div>
+											<input class="form-input" type="email">
+										</label>
+										<label class="billing__phone form__phone">
+											<div class="form__subtitle">Phone*</div>
+											<input class="form-input" type="text">
+										</label>
+										<label class="billing__check form__check">
+											<input type="checkbox" checked>
+											<div class="form__subtitle">Create an account?</div>
+										</label>
+										<div class="billing__check-text form__check-text">
+											Create an account by entering the information below. If you are a
+											returning customer please login at the top of the page.
+										</div>
+										<label class="billing__password form__password">
+											<div class="form__subtitle">Account password*</div>
+											<input class="form-input" type="password" placeholder="Password">
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="form__content shipping">
+							<div class="container">
+								<div class="form__title">
+									shipping
+									<label>
+										<input type="checkbox">
+										Ship to a different address?
+									</label>
+								</div>
+								<div class="container-small">
+									<div class="form__inner billing__inner">
+
+										<label class="shipping__country form__country">
+											<div class="form__subtitle">country*</div>
+											<select class="form-input" name="shipping__country">
+												<option value="1">United Kingdom (UK)</option>
+												<option value="1">USA</option>
+												<option value="1">China</option>
+											</select>
+										</label>
+										<label class="shipping__first-name form__first-name">
+											<div class="form__subtitle">first name*</div>
+											<input class="form-input" type="text">
+										</label>
+										<label class="shipping__last-name form__last-name">
+											<div class="form__subtitle">last name*</div>
+											<input class="form-input" type="text">
+										</label>
+										<label class="shipping__company-name form__company-name">
+											<div class="form__subtitle">company name</div>
+											<input class="form-input" type="text">
+										</label>
+										<label class="shipping__address form__address">
+											<div class="form__subtitle">address*</div>
+											<input class="form-input" type="text" placeholder="Street address">
+											<input class="form-input" type="text" placeholder="Apartment, Suite, Unite etc. (optional)">
+										</label>
+										<label class="shipping__city form__city">
+											<div class="form__subtitle">Town / City*</div>
+											<input class="form-input" type="text" placeholder="Town / City">
+										</label>
+										<label class="shipping__county form__county">
+											<div class="form__subtitle">county</div>
+											<input class="form-input" type="text">
+										</label>
+										<label class="shipping__postcode form__postcode">
+											<div class="form__subtitle">Postcode</div>
+											<input class="form-input" type="text" placeholder="Postcode">
+										</label>
+										<label class="shipping__notes form__notes">
+											<div class="form__subtitle">Order Notes*</div>
+											<input class="form-input" type="text">
+										</label>
+
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+
+						<div class="form__content order">
+							<div class="container">
+								<div class="form__title">order</div>
+								<div class="container-small">
+									<div class="form__inner order__inner">
+										<div class="order__withdrawals">
+											<div class="order__withdrawals-title">
+												<div class="order__withdrawals-title-product">Product</div>
+												<div class="order__withdrawals-title-total">Total</div>
+											</div>
+											<div class="order__withdrawals-item">
+												<div class="order__withdrawals-item-name">Beef with pineapple x 2</div>
+												<div class="order__withdrawals-item-price">$36.40</div>
+											</div>
+											<div class="order__withdrawals-item">
+												<div class="order__withdrawals-item-name">Egg baguette x 1</div>
+												<div class="order__withdrawals-item-price">$8.10</div>
+											</div>
+											<div class="order__withdrawals-subtotal">
+												<div class="order__withdrawals-subtotal-name">Subtotal</div>
+												<div class="order__withdrawals-subtotal-price">$44.50</div>
+											</div>
+											<div class="order__withdrawals-shipping">
+												<div class="order__withdrawals-shiping-name">Shipping</div>
+												<div class="order__withdrawals-shiping-price">Free Shipping </div>
+											</div>
+											<div class="order__withdrawals-total">
+												<div class="order__withdrawals-total-name">Total</div>
+												<div class="order__withdrawals-total-price">$44.50</div>
+											</div>
+										</div>
+										<div class="order__checkout">
+											<div class="order__checkout-item">
+												<input type="radio" name="checkout" id="bank">
+												<label for="bank">Direct Bank Transfer</label>
+												<div class="order__checkout-item-text">
+													Make your payment directly into our bank account. Please use your Order ID as the payment
+													reference. Your order won’t be shipped until the funds have cleared in our account.
+												</div>
+											</div>
+											<div class="order__checkout-item">
+												<input type="radio" name="checkout" id="payment">
+												<label for="payment">Cheque Payment</label>
+											</div>
+											<div class="order__checkout-item">
+												<input type="radio" name="checkout" id="paypal">
+												<label for="paypal">Paypal
+													<img src="img/Visa.svg" alt="">
+													<img src="img/Mastercard.svg" alt="">
+													<img src="img/PayPal.png" alt="">
+												</label>
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="form__btn-container">
+							<div class="container-small">
+								<div class="form__btn-container-inner">
+									<button class="form__btn">
+										Place Order
+									</button>
+								</div>
+							</div>
+						</div>
+					</form>
+				</section>
+			</main>
+		</div>
+
+		@@include('./components/_footer.html')
+
+	</div>
+
+	@@include('./components/_scripts.html')
+
+</body>
+
+</html>

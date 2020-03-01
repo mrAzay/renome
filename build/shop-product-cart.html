@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+  </head>
+
+<body>
+	<div class="wrapper">
+
+
+		<div class="content">
+
+			<header class="header" id="header-trans">
+	<div class="container container-none">
+		<div class="header__inner">
+			<div class="logo">Renome</div>
+			<nav class="nav" id="nav">
+				<ul class="nav__list" id="ddmenu">
+					<li class="nav__item"><a href="/index.html">HOME</a></li>
+					<li class="nav__item"><a href="/about.html">ABOUT</a></li>
+					<li class="nav__item"><a href="/menu.html">MENU</a></li>
+					<li class="nav__item"><a href="/reservation.html">RESERVATIONS</a></li>
+					<li class="nav__item sub-menu"><a href="/blog.html">BLOG</a>
+						<ul class="sub-menu__list">
+							<li><a href="../one_page.html">One Page</a></li>
+							<li><a href="#">Portfolio</a></li>
+							<li><a href="#">Shortcodes</a></li>
+						</ul>
+					</li>
+					<li class="nav__item"><a href="#">shop</a></li>
+					<li class="nav__item"><a href="#">CONTACT</a></li>
+				</ul>
+			</nav>
+			<div class="button">
+				<div class="search"><span class="icon-search"></span></i></div>
+				<div class="cart"><span class="icon-cart"></span> <span>2</span>
+					<ul class="cart__dropdown">
+						<li class="cart__price"><a href="#">$44.50</a></li>
+						<li class="cart__view"><a href="#">View Cart</a></li>
+						<li class="cart__check"><a href="#">Checkout</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header-search">
+		<div class="container">
+			<div class="header-search__inner">
+				<input type="search" placeholder="Search...">
+				<div class="header-search__buttons">
+					<div class="header-search__search"><span class="icon-search"></span></i></div>
+					<div class="header-search__close"><i class="fas fa-times"></i></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+			<main>
+				<section class="product-bg">
+					<div class="container">
+						<div class="product-bg__inner bg__inner">
+							<div class="product-bg__text bg__text">
+								<div class="product__title bg__title">shop</div>
+								<div class="product__subtitle bg__subtitle">order dishes online</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="product">
+					<div class="container">
+						<div class="product__inner">
+							<div class="product__imgs">
+								<div class="product__subimgs">
+									<img class="product__subimg product__subimg--active" src="img/product-img.jpg"" alt="">
+									<img class=" product__subimg" src="img/product-img2.jpg"" alt="">
+								</div>
+
+								<img class=" product__img" id="product__img" src="img/product-img.jpg" alt="">
+
+								</div>
+
+								<div class="product__text">
+									<div class="product__breadcrumbs">Shop/Mains<span>/korean bibimbap </span></div>
+									<div class="product__name">korean bibimbap</div>
+									<div class="product__star">2 customer review</div>
+									<div class="product__price">$19.35</div>
+									<div class="product__description">Sed porta efficitur enim, sed feugiat purus aliquam in. Proin
+										vehicula
+										sollicitudin tincidunt. Suspendisse vel ligula a orci viverra congue. Aenean felis odio, dictum eget
+										volutpat eu, lacinia vitae mauris liquam convallis vulputate augue accumsan. </div>
+									<form class="product__buy">
+										<input class="product__quantity" type="number" value="1" min="1">
+										<button class="product__button">add to cart</button>
+									</form>
+
+								</div>
+							</div>
+						</div>
+				</section>
+
+				<section class="product-tab">
+
+					<div class="product-tab__inner">
+						<ul class="product-tab__caption">
+							<li class="product-tab__link">Description</li>
+							<li class="product-tab__link product-tab__link--active">Reviews(2)</li>
+						</ul>
+
+						<div class="product-tab__content">
+							<div class="container-small">
+								<div class="product-tab__description"> Fusce pulvinar egestas ex id tincidunt. Curabitur faucibus tellus
+									eu ligula rutrum, non varius est blandit. Pellentesque bibendum faucibus convallis. Sed placerat nulla
+									sodales nunc scelerisque dignissim tincidunt quis est. Morbi porttitor et sapien at condimentum.
+									Quisque mi ligula, porta at ante sit amet, aliquam bibendum risus. Integer id auctor nulla. Donec
+									maximus orci non massa finibus facilisis.
+								</div>
+							</div>
+						</div>
+						<div class="product-tab__content product-tab__content--active">
+							<div class="product-tab__commets">
+								<div class="container-small">
+									<div class="product-tab__comment comment">
+										<div class="comment__profile">
+											<img class="comment__img" src="img/comment-img1.jpg"></img>
+											<div class="comment__name">John doe</div>
+											<div class="comment__star"></div>
+										</div>
+										<div class="comment__text">Donec maximus at neque pharetra convallis. Fusce tellus odio, mattis nec
+											nisl sit amet, efficitur congue elit. Mauris tincidunt ex id dignissim tincidunt. </div>
+										<div class="comment__date">APR 25, 12:45 pm </div>
+									</div>
+									<div class="product-tab__comment comment">
+										<div class="comment__profile">
+											<img class="comment__img" src="img/comment-img2.jpg"></img>
+											<div class="comment__name">John doe</div>
+											<div class="comment__star"></div>
+										</div>
+										<div class="comment__text">Morbi lobortis enim auctor pharetra auctor. Vestibulum quis lorem a ante
+											aliquet fringilla.</div>
+										<div class="comment__date">APR 25, 12:45 pm </div>
+									</div>
+								</div>
+							</div>
+							<div class="product-tab__comment-form comment-form">
+								<div class="container-small">
+									<form class="comment-form__inner">
+										<div class="comment-form__title">add a review</div>
+										<input class="comment-form__name form-input" type="text" placeholder="Name">
+										<input class="comment-form__email form-input" type="email" placeholder="Email">
+										<div class="comment-form__rating">your rating</div>
+										<input class="comment-form__message form-input" type="text" placeholder="Message">
+										<input class="comment-form__button" type="button" value="submit" type="submit">
+									</form>
+								</div>
+							</div>
+
+						</div>
+
+
+					</div>
+				</section>
+
+				<section class="product-related">
+					<div class="container-small">
+						<div class="product-related__inner">
+							<div class="product-related__title">Related Products </div>
+							<div class="product-related__row">
+								<div class="product-related__item">
+									<img class="product-related__item-img" src="img/product-item__img1.jpg" alt="">
+									<div class="product-related__item-name"><a href="#">Beef with pineapple</a></div>
+									<div class="product-related__item-price">$18.20</div>
+								</div>
+								<div class="product-related__item">
+									<img class="product-related__item-img" src="img/product-item__img2.jpg" alt="">
+									<div class="product-related__item-name"><a href="#">Egg baguette</a></div>
+									<div class="product-related__item-price">$8.10</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			</main>
+		</div>
+
+
+		<footer class="footer">
+	<div class="container">
+		<div class="footer__inner">
+			<div class="footer__logo">Renome</div>
+			<div class="footer__copyright">Copyright 2015 Renome by Estetiq</div>
+			<div class="footer__social">
+				<ul>
+					<li class="social-text">Follow US:</li>
+					<li class="social-link facebook">
+						<div class="social-link__wrapper">
+							<a href="#"><span class="icon-facebook"></span></i></a>
+						</div>
+					</li>
+					<li class="social-link twitter">
+						<div class="social-link__wrapper">
+							<a href="#"><span class="icon-twitter"></span></a>
+						</div>
+					</li>
+					<li class="social-link google">
+						<div class="social-link__wrapper">
+							<a href="#"><span class="icon-google-plus"></span></i></a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+  </head>
+
+<body>
+	<div class="wrapper">
+
+		<div class="content">
+			<header class="header" id="header-trans">
+	<div class="container container-none">
+		<div class="header__inner">
+			<div class="logo">Renome</div>
+			<nav class="nav" id="nav">
+				<ul class="nav__list" id="ddmenu">
+					<li class="nav__item"><a href="/index.html">HOME</a></li>
+					<li class="nav__item"><a href="/about.html">ABOUT</a></li>
+					<li class="nav__item"><a href="/menu.html">MENU</a></li>
+					<li class="nav__item"><a href="/reservation.html">RESERVATIONS</a></li>
+					<li class="nav__item sub-menu"><a href="/blog.html">BLOG</a>
+						<ul class="sub-menu__list">
+							<li><a href="../one_page.html">One Page</a></li>
+							<li><a href="#">Portfolio</a></li>
+							<li><a href="#">Shortcodes</a></li>
+						</ul>
+					</li>
+					<li class="nav__item"><a href="#">shop</a></li>
+					<li class="nav__item"><a href="#">CONTACT</a></li>
+				</ul>
+			</nav>
+			<div class="button">
+				<div class="search"><span class="icon-search"></span></i></div>
+				<div class="cart"><span class="icon-cart"></span> <span>2</span>
+					<ul class="cart__dropdown">
+						<li class="cart__price"><a href="#">$44.50</a></li>
+						<li class="cart__view"><a href="#">View Cart</a></li>
+						<li class="cart__check"><a href="#">Checkout</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header-search">
+		<div class="container">
+			<div class="header-search__inner">
+				<input type="search" placeholder="Search...">
+				<div class="header-search__buttons">
+					<div class="header-search__search"><span class="icon-search"></span></i></div>
+					<div class="header-search__close"><i class="fas fa-times"></i></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+			<main>
+				<div class="blog-main-bg">
+					<div class="container">
+						<div class="blog-main-bg__inner bg__inner">
+							<div class="blog-bg__text bg__text">
+								<div class="blog-bg__title bg__title">blog</div>
+								<div class="blog-bg__subtitle bg__subtitle">news, recipes and much more</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="blog-main">
+					<div class="container">
+						<div class="blog-main__inner">
+							<div class="blog-main__sidebar" id="blog-main__sidebar">
+								<form class="blog-main__search">
+									<input type="search" placeholder="Search">
+									<button class="search-btn" type="submit"></button>
+								</form>
+								<div class="categories">
+									<div class="categories__title sidbar-title">Categories</div>
+									<ul class="categories__list">
+										<li class="categories__item" data-filter='events'>Events</li>
+										<li class="categories__item" data-filter='press'>Press</li>
+										<li class="categories__item" data-filter='promotions'>Promotions</li>
+										<li class="categories__item" data-filter='recipes'>Recipes</li>
+										<li class="categories__item" data-filter='all'>All</li>
+									</ul>
+								</div>
+								<div class="popular-posts">
+									<div class="popular-posts__title sidbar-title">Popular Posts</div>
+									<div class="popular-post">
+										<img src="img/popular-img1.png" alt="еда" class="popular-post__img">
+										<div class="popular-post__text">
+											<div class="popular-post__title"><a href="#">Summer specials</a></div>
+											<div class="popular-post__date">June 5, 2015</div>
+										</div>
+									</div>
+									<div class="popular-post">
+										<img src="img/popular-img2.png" alt="еда" class="popular-post__img">
+										<div class="popular-post__text">
+											<div class="popular-post__title"><a href="#">Summer specials</a></div>
+											<div class="popular-post__date">June 5, 2015</div>
+										</div>
+									</div>
+									<div class="popular-post">
+										<img src="img/popular-img3.png" alt="еда" class="popular-post__img">
+										<div class="popular-post__text">
+											<div class="popular-post__title"><a href="#">Summer specials</a></div>
+											<div class="popular-post__date">June 5, 2015</div>
+										</div>
+									</div>
+									<div class="popular-post">
+										<img src="img/popular-img4.png" alt="еда" class="popular-post__img">
+										<div class="popular-post__text">
+											<div class="popular-post__title"><a href="#">Summer specials</a></div>
+											<div class="popular-post__date">June 5, 2015</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="blog-main__tape">
+								<div class="post" data-categori='promotions'>
+									<div class="post__categorie"><a href="#">promotions</a></div>
+									<div class="post__title"><a href="#">Summer specials</a></div>
+									<div class="post__date">
+										<a href="#">June 5, 2015</a>
+									</div>
+									<img class="post__img" src="img/post-bg1.jpg" alt="background image">
+									<div class="post__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra felis
+										lectus, eget malesuada lorem suscipit sed. Maecenas sapien lacus, placerat in nibh nec, maximus
+										ornare magna. Ut vestibulum leo vel dignissim interdum.</div>
+									<a href="#" class="post__more">Continue Reading…</a>
+								</div>
+								<div class="post" data-categori="press">
+									<div class="post__categorie"><a href="#">press</a></div>
+									<div class="post__title"><a href="#">our salad are award winning</a></div>
+									<div class="post__date">
+										<a href="#">APril 25, 2015</a>
+									</div>
+									<img class="post__img" src="img/post-bg2.jpg" alt="background image">
+									<div class="post__text">Sed viverra bibendum sollicitudin. Praesent interdum porttitor elit molestie
+										convallis. Integer sagittis vitae sem eget euismod. Etiam ut risus ac ligula hendrerit volutpat.
+										Donec at consectetur leo, eu pretium estmauris</div>
+									<a href="#" class="post__more">Continue Reading…</a>
+								</div>
+								<div class="post" data-categori="recipe">
+									<div class="post__categorie"><a href="#">recipes</a></div>
+									<div class="post__title"><a href="#">homemade pizza</a></div>
+									<div class="post__date">
+										<a href="#">APril 7, 2015</a>
+									</div>
+									<img class="post__img" src="img/post-bg3.jpg" alt="background image">
+									<div class="post__text">Curabitur pulvinar condimentum augue, id facilisis nunc dapibus vel. Praesent
+										ut tortor non lorem iaculis imperdiet mollis at ex. Ut fringilla, sapien ac tempus mattis, massa
+										tortor posuere neque etiam vitae orci ut tellusbi ben.</div>
+									<a href="#" class="post__more">Continue Reading…</a>
+								</div>
+								<div class="post" data-categori="events">
+									<div class="post__categorie"><a href="#">events</a></div>
+									<div class="post__title"><a href="#">grand opening!</a></div>
+									<div class="post__date">
+										<a href="#">March 10, 2015</a>
+									</div>
+									<img class="post__img" src="img/post-bg4.jpg" alt="background image">
+									<div class="post__text">Curabitur pulvinar condimentum augue, id facilisis nunc dapibus vel. Praesent
+										ut tortor non lorem iaculis imperdiet mollis at ex. Ut fringilla, sapien ac tempus mattis, massa
+										tortor posuere neque etiam vitae orci ut tellusbi ben.</div>
+									<a href="#" class="post__more">Continue Reading…</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pagination-blog pagination">
+					<div class="container">
+						<div class="pagination-blog__inner pagination__inner">
+							<span class="icon-circle-left pagination__left-arrow"></span>
+							<ul class="pagination-blog__numbers pagination__numbers">
+								<li class="pagination-blog__number pagination__number pagination__number--active"><a href="#">1</a></li>
+								<li class="pagination-blog__number pagination__number"><a href="#">2</a></li>
+								<li class="pagination-blog__number pagination__number"><a href="#">3</a></li>
+								<li class="pagination-blog__number pagination__number"><a href="#">4</a></li>
+								<li class="pagination-blog__number pagination__number"><a href="#">5</a></li>
+								<li class="pagination-blog__number pagination__number"><a href="#">6</a></li>
+							</ul>
+							<span class="icon-circle-right pagination__right-arrow"></span>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+		<footer class="footer">
+	<div class="container">
+		<div class="footer__inner">
+			<div class="footer__logo">Renome</div>
+			<div class="footer__copyright">Copyright 2015 Renome by Estetiq</div>
+			<div class="footer__social">
+				<ul>
+					<li class="social-text">Follow US:</li>
+					<li class="social-link facebook">
+						<div class="social-link__wrapper">
+							<a href="#"><span class="icon-facebook"></span></i></a>
+						</div>
+					</li>
+					<li class="social-link twitter">
+						<div class="social-link__wrapper">
+							<a href="#"><span class="icon-twitter"></span></a>
+						</div>
+					</li>
+					<li class="social-link google">
+						<div class="social-link__wrapper">
+							<a href="#"><span class="icon-google-plus"></span></i></a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./components/_head.html')
+
+<body>
+	<div class="wrapper">
+
+
+		<div class="content">
+
+			@@include('./components/_header-trans.html')
+			<main>
+				<section class="shop-bg">
+					<div class="container">
+						<div class="shop-bg__inner bg__inner">
+							<div class="shop-bg__text bg__text">
+								<div class="shop__title bg__title">shop</div>
+								<div class="shop__subtitle bg__subtitle">order dishes online</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="shop-gallery">
+					<div class="shop-gallery__inner">
+						<div class="shop-gallery__filter filter">
+							<a class="shop-gallery__filter-item filter-item filter-item--active" href="#"
+								data-filter='all'>all products</a>
+							<a class="shop-gallery__filter-item filter-item" href="#" data-filter='mains'>mains</a>
+							<a class="shop-gallery__filter-item filter-item" href="#" data-filter='breakfast'>breakfast</a>
+							<a class="shop-gallery__filter-item filter-item" href="#" data-filter='desserts'>desserts</a>
+						</div>
+						<div class="container">
+							<div class="shop-gallery__content">
+								<div class="shop-gallery__item"  data-cat='breakfast'>
+									<img class="shop-gallery__item-img" src="img/shop-gallery1.jpg" alt="">
+									<div class="shop-gallery__item-name">Chicken livers</div>
+									<div class="shop-gallery__item-price">$9.55</div>
+								</div>
+								<div class="shop-gallery__item" data-cat='mains'>
+									<img class="shop-gallery__item-img" src="img/shop-gallery2.jpg" alt="">
+									<div class="shop-gallery__item-name">Steak with vegetables</div>
+									<div class="shop-gallery__item-price">$14.20</div>
+								</div>
+								<div class="shop-gallery__item" data-cat='desserts'>
+									<img class="shop-gallery__item-img" src="img/shop-gallery3.jpg" alt="">
+									<div class="shop-gallery__item-name">Beef with pineapple</div>
+									<div class="shop-gallery__item-price">$18.20</div>
+								</div>
+								<div class="shop-gallery__item" data-cat='desserts'>
+									<img class="shop-gallery__item-img" src="img/shop-gallery4.jpg" alt="">
+									<div class="shop-gallery__item-name">Waffles with coffee</div>
+									<div class="shop-gallery__item-price">$7.90</div>
+								</div>
+								<div class="shop-gallery__item" data-cat='breakfast'>
+									<img class="shop-gallery__item-img" src="img/shop-gallery5.jpg" alt="">
+									<div class="shop-gallery__item-name">Apple pie</div>
+									<div class="shop-gallery__item-price">$15.70</div>
+								</div>
+								<div class="shop-gallery__item" data-cat='mains'>
+									<img class="shop-gallery__item-img" src="img/shop-gallery6.jpg" alt="">
+									<div class="shop-gallery__item-name">Egg baguette</div>
+									<div class="shop-gallery__item-price">$8.10</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<div class="pagination-shop pagination">
+					<div class="container">
+						<div class="pagination-shop__inner pagination__inner">
+							<span class="icon-circle-left pagination__left-arrow"></span>
+							<ul class="pagination-shop__numbers pagination__numbers">
+								<li class="pagination-shop__number pagination__number pagination__number--active"><a href="#">1</a></li>
+								<li class="pagination-shop__number pagination__number"><a href="#">2</a></li>
+								<li class="pagination-shop__number pagination__number"><a href="#">3</a></li>
+								<li class="pagination-shop__number pagination__number"><a href="#">4</a></li>
+								<li class="pagination-shop__number pagination__number"><a href="#">5</a></li>
+							</ul>
+							<span class="icon-circle-right pagination__right-arrow"></span>
+						</div>
+					</div>
+				</div>
+
+
+			</main>
+		</div>
+
+
+		@@include('./components/_footer.html')
+
+	</div>
+
+	@@include('./components/_scripts.html')
+
+</body>
+
+</html>
