@@ -1,10 +1,18 @@
 $(function () {
 
-	$('ul.product-tab__caption').on('click', 'li:not(.active)', function() {
-    $(this)
-      .addClass('product-tab__link--active').siblings().removeClass('product-tab__link--active')
-      .closest('div.product-tab__inner').find('div.product-tab__content').removeClass('product-tab__content--active').eq($(this).index()).addClass('product-tab__content--active');
-  });
+
+	$('.portfolio-product__slider').slick({
+		arrows: true,
+		dots: false,
+		prevArrow: '.portfolio-product-arrow-left',
+		nextArrow: '.portfolio-product-arrow-right'
+	});
+
+	$('ul.product-tab__caption').on('click', 'li:not(.active)', function () {
+		$(this)
+			.addClass('product-tab__link--active').siblings().removeClass('product-tab__link--active')
+			.closest('div.product-tab__inner').find('div.product-tab__content').removeClass('product-tab__content--active').eq($(this).index()).addClass('product-tab__content--active');
+	});
 
 	$('.product__subimg').click(function (e) {
 		e.preventDefault();
@@ -59,7 +67,7 @@ $(function () {
 				s = '';
 			for (var i = 0; i < Sa.length; i++) {
 				if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
-					s += Sa[i] + ': ' + Sa.getPropertyValue(Sa[i]) + '; '
+					s += Sa[i] + ': ' + Sa.getPropertyValue(Sa[i]) + '; ';
 				}
 			}
 			b = document.createElement('div');
@@ -88,7 +96,7 @@ $(function () {
 			b.style.top = '';
 		}
 		window.addEventListener('resize', function () {
-			a.children[0].style.width = getComputedStyle(a, '').width
+			a.children[0].style.width = getComputedStyle(a, '').width;
 		}, false);
 	}
 

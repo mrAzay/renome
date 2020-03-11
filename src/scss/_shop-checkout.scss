@@ -11,197 +11,207 @@
 	}
 }
 
-.form {
-	&__content {
-		padding-top: 25px;
-		margin-top: 100px;
-		border-top: 1px solid #f2f5fa;
+.form-section {
 
-	}
 
-	&__title {
-		color: #000000;
-		font-size: 12px;
-		font-weight: 700;
-		text-transform: uppercase;
-		letter-spacing: 2.4px;
-		margin-bottom: 69px;
-		display: flex;
-		align-items: center;
+	.form {
+		&__content {
+			padding-top: 25px;
+			margin-top: 100px;
+			border-top: 1px solid #f2f5fa;
 
-		label {
-			color: #1e2633;
-			font-size: 15px;
-			line-height: 25px;
-			text-transform: none;
-			font-weight: 400;
-			letter-spacing: normal;
-			display: flex;
-			align-items: center;
-
-			input {
-				margin-left: 20px;
-				margin-right: 15px;
-			}
-		}
-	}
-
-	&__subtitle {
-		color: #1e2633;
-		font-size: 11px;
-		font-weight: 700;
-		line-height: 25px;
-		text-transform: uppercase;
-		letter-spacing: 2.2px;
-		margin-bottom: 5px;
-	}
-
-	&__inner {
-		display: flex;
-		flex-wrap: wrap;
-
-		&>* {
-			width: 100%;
-			margin-bottom: 20px;
-
-			input,
-			select {
-				width: 100%;
-			}
-		}
-	}
-
-	input+input {
-		margin-top: 20px;
-	}
-
-	&__first-name,
-	&__last-name,
-	&__county,
-	&__postcode,
-	&__email,
-	&__phone {
-		width: 47%;
-	}
-
-	&__first-name,
-	&__county,
-	&__email {
-		margin-right: 50px;
-	}
-
-	&__check {
-		display: flex;
-		align-items: center;
-
-		.form__subtitle {
-			margin: 0;
 		}
 
-		input {
-			width: auto;
-			margin-right: 15px;
-		}
-	}
-
-	&__check-text {
-		color: #404040;
-		font-size: 12px;
-		line-height: 30px;
-		letter-spacing: 1.8px;
-	}
-
-	.order {
-		&__withdrawals {
+		&__title {
+			color: #000000;
 			font-size: 12px;
 			font-weight: 700;
 			text-transform: uppercase;
 			letter-spacing: 2.4px;
-			margin-bottom: 75px;
-
-			&>* {
-				border-bottom: 1px solid #f2f5fa;
-				display: flex;
-				align-items: center;
-				padding-bottom: 25px;
-				margin-bottom: 25px;
-
-				&:first-child {
-					padding-bottom: 20px;
-				}
-
-				&>*:first-child {
-					width: 70%;
-				}
-			}
-		}
-
-		&__withdrawals-item-name {
-			font-size: 14px;
-			text-transform: none;
-			letter-spacing: 0.7px;
-		}
-
-		&__checkout {
-			input {
-				width: auto;
-			}
+			margin-bottom: 69px;
+			display: flex;
+			align-items: center;
 
 			label {
+				color: #1e2633;
+				font-size: 15px;
+				line-height: 25px;
+				text-transform: none;
+				font-weight: 400;
+				letter-spacing: normal;
+				display: flex;
+				align-items: center;
+
+				input {
+					margin-left: 20px;
+					margin-right: 15px;
+				}
+			}
+		}
+
+		&__subtitle {
+			color: #1e2633;
+			font-size: 11px;
+			font-weight: 700;
+			line-height: 25px;
+			text-transform: uppercase;
+			letter-spacing: 2.2px;
+			margin-bottom: 5px;
+		}
+
+		&__inner {
+			display: flex;
+			flex-wrap: wrap;
+
+			&>* {
+				width: 100%;
+				margin-bottom: 20px;
+
+				input,
+				select {
+					width: 100%;
+				}
+			}
+		}
+
+		input+input {
+			margin-top: 20px;
+		}
+
+		&__first-name,
+		&__last-name,
+		&__county,
+		&__postcode,
+		&__email,
+		&__phone {
+			width: 47%;
+		}
+
+		&__first-name,
+		&__county,
+		&__email {
+			margin-right: 50px;
+		}
+
+		&__check {
+			display: flex;
+			align-items: center;
+
+			.form__subtitle {
+				margin: 0;
+			}
+
+			input {
+				width: auto;
+				margin-right: 15px;
+			}
+		}
+
+		&__check-text {
+			color: #404040;
+			font-size: 12px;
+			line-height: 30px;
+			letter-spacing: 1.8px;
+		}
+
+		.order {
+			&__withdrawals {
 				font-size: 12px;
 				font-weight: 700;
 				text-transform: uppercase;
 				letter-spacing: 2.4px;
-				margin-left: 15px;
-				display: flex;
-				align-items: center;
-				cursor: pointer;
-				img {
-					margin-left: 50px;
+				margin-bottom: 75px;
 
-					&+img {
-						margin-left: 20px;
+				&>* {
+					border-bottom: 1px solid #f2f5fa;
+					display: flex;
+					align-items: center;
+					padding-bottom: 25px;
+					margin-bottom: 25px;
+
+					&:first-child {
+						padding-bottom: 20px;
+					}
+
+					&>*:first-child {
+						width: 70%;
 					}
 				}
 			}
 
-			&-item {
-				border-bottom: 1px solid #f2f5fa;
-				padding-bottom: 20px;
-				margin-bottom: 35px;
-				display: flex;
-				flex-wrap: wrap;
-				align-items: center;
+			&__withdrawals-item-name {
+				font-size: 14px;
+				text-transform: none;
+				letter-spacing: 0.7px;
 			}
 
-			&-item-text {
-				margin-left: 32px;
-				margin-top: 25px;
-				color: #404040;
-				font-size: 12px;
-				font-weight: 400;
-				line-height: 30px;
-				letter-spacing: 1.8px;
+			&__checkout {
+				input {
+					width: auto;
+				}
+
+				label {
+					font-size: 12px;
+					font-weight: 700;
+					text-transform: uppercase;
+					letter-spacing: 2.4px;
+					margin-left: 15px;
+					display: flex;
+					align-items: center;
+					cursor: pointer;
+
+					img {
+						margin-left: 50px;
+
+						&+img {
+							margin-left: 20px;
+						}
+					}
+				}
+
+				&-item {
+					border-bottom: 1px solid #f2f5fa;
+					padding-bottom: 20px;
+					margin-bottom: 35px;
+					display: flex;
+					flex-wrap: wrap;
+					align-items: center;
+				}
+
+				&-item-text {
+					margin-left: 32px;
+					margin-top: 25px;
+					color: #404040;
+					font-size: 12px;
+					font-weight: 400;
+					line-height: 30px;
+					letter-spacing: 1.8px;
+				}
 			}
 		}
-	}
 
-	&__btn-container-inner {
-		display: flex;
-		justify-content: flex-end;
-		margin-bottom: 100px;
-	}
+		&__btn-container-inner {
+			display: flex;
+			justify-content: flex-end;
+			margin-bottom: 100px;
+		}
 
-	&__btn {
-		border: none;
-		width: 170px;
-		height: 50px;
-		background-color: #1e2633;
-		color: #ffffff;
-		font-size: 11px;
-		font-weight: 700;
-		text-transform: uppercase;
-		letter-spacing: 1.65px;
-		cursor: pointer;
+		&__btn {
+			border: none;
+			width: 170px;
+			height: 50px;
+			background-color: #1e2633;
+			color: #ffffff;
+			font-size: 11px;
+			font-weight: 700;
+			text-transform: uppercase;
+			letter-spacing: 1.65px;
+			transition: all 0.3s ease-in-out;
+			cursor: pointer;
+
+			&:hover {
+				background-color: #985e5b;
+			}
+		}
 	}
 }

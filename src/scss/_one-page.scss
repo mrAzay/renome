@@ -90,6 +90,11 @@
 			text-transform: uppercase;
 			letter-spacing: 0.6px;
 			cursor: pointer;
+			transition: all .3s ease-in-out;
+			&:hover{
+				background-color: #1e2633;
+				color: #fff;
+			}
 		}
 	}
 
