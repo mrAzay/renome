@@ -16,6 +16,37 @@ body {
   color: #1e2633;
 }
 
+input,
+button,
+select,
+textarea {
+  outline: none;
+}
+
+input {
+
+  &:focus::-webkit-input-placeholder {
+    color: transparent !important;
+  }
+
+  &:focus:-moz-placeholder {
+    color: transparent !important;
+  }
+
+  /* FF 4-18 */
+  &:focus::-moz-placeholder {
+    color: transparent !important;
+  }
+
+  /* FF 19+ */
+  &:focus:-ms-input-placeholder {
+    color: transparent !important;
+  }
+
+  /* IE 10+ */
+}
+
+
 ul {
   padding: 0;
   margin: 0;
@@ -89,6 +120,23 @@ a {
   -webkit-box-reflect: inherit !important;
 }
 
+.bg {
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  background-repeat: no-repeat;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: #1e2633;
+    opacity: 0.5;
+  }
+}
+
 .bg__text {
   position: absolute;
   bottom: 100px;
@@ -97,7 +145,7 @@ a {
 
 .bg__inner {
   position: relative;
-  height: 700px;
+  height: 100vh;
 }
 
 .bg__title {
@@ -168,7 +216,7 @@ a {
 
   &__left-arrow,
   &__right-arrow {
-    font-size: 35px;
+    font-size: 25px;
     cursor: pointer;
   }
 
@@ -177,6 +225,9 @@ a {
     font-weight: 700;
     line-height: 30px;
     text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
   }
 
   &__number {
@@ -184,10 +235,6 @@ a {
 
     &--active {
       color: #985e5b;
-    }
-
-    &+.pagination__number {
-      margin-left: 40px;
     }
   }
 }
@@ -199,7 +246,6 @@ a {
   font-size: 15px;
   font-weight: 600;
   line-height: 25px;
-  height: 42px;
 
   &::placeholder {
     color: #bbbdbf;
@@ -207,4 +253,17 @@ a {
     font-weight: 600;
     line-height: 25px;
   }
+}
+
+input.form-input {
+  height: 42px;
+}
+
+
+.body--close {
+  overflow: hidden;
+}
+
+textarea {
+  border: 3px solid #f5f7fa !important;
 }

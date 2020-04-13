@@ -25,49 +25,34 @@
 	}
 
 	&__social {
+		display: flex;
+		align-items: center;
+	
 
-		li {
-			display: inline-block;
-
-			+li {
-				margin-right: 10px;
+		&-list {
+			display: flex;
+			li+li{
+				margin-left: 10px;
 			}
 		}
 
-		.facebook {
-			padding: 10px 15px;
-		}
-
-		.twitter {
-			padding: 10px 11px;
-		}
-
-		.google {
-			padding: 10px;
-		}
-
-		.social-text {
+		&-text{
 			margin-right: 16px;
-			color: #1e2633;
 			font-size: 12px;
 			font-weight: 700;
 			line-height: 25px;
 			text-transform: uppercase;
 		}
-
-		.social-link {
-			&__wrapper {
-				height: 33px;
-				width: 33px;
-				border: 2px solid #000;
+		&-link{
+			a{
+				padding: 9px 10px 8px;
+				border: 2px solid #1e2633;
 				border-radius: 50%;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-			}
-			a {
-				color: #1e2633;
-				text-decoration: none;
+				transition: all 0.3s ease-in-out;
+				&:hover{
+					border: 2px solid #985e5b;
+					color: #985e5b;
+				}
 			}
 		}
 	}

@@ -46,8 +46,12 @@ let gulp = require ('gulp'),
         'node_modules/slick-carousel/slick/slick.css',
         'node_modules/slick-carousel/slick/slick-theme.css',
         'node_modules/jquery.flipster/dist/jquery.flipster.css',
-        'node_modules/flatpickr/dist/flatpickr.min.css',
-        'node_modules/lightgallery/dist/css/lightgallery.css'
+        'node_modules/lightgallery/dist/css/lightgallery.css',
+        'node_modules/pickmeup/css/pickmeup.css',
+        'node_modules/rateyo/src/jquery.rateyo.css',
+        'node_modules/jquery-form-styler/dist/jquery.formstyler.css',
+        'node_modules/jquery-form-styler/dist/jquery.formstyler.theme.css',
+        'node_modules/animate.css/animate.min.css'
       ])
       .pipe(sourcemaps.init())
       .pipe(concat('libs.min.css')) //склеиваем их в один файл с указанным именем
@@ -60,9 +64,11 @@ let gulp = require ('gulp'),
       return gulp.src([ //тут подключаем разные js в общую библиотеку. Отключите то, что вам не нужно.
         'node_modules/slick-carousel/slick/slick.js',
         'node_modules/jquery.flipster/dist/jquery.flipster.min.js',
-        'node_modules/headhesive/dist/headhesive.min.js',
-        'node_modules/flatpickr/dist/flatpickr.min.js',
-        'node_modules/lightgallery/dist/js/lightgallery.js'
+        'node_modules/lightgallery/dist/js/lightgallery.js',
+        'node_modules/pickmeup/dist/pickmeup.min.js',
+        'node_modules/rateyo/src/jquery.rateyo.js',
+        'node_modules/jquery-form-styler/dist/jquery.formstyler.min.js',
+        'node_modules/ikselect/dist/jquery.ikSelect.min.js'
       ])
       .pipe(sourcemaps.init())
       .pipe(concat('libs.min.js'))

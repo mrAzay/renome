@@ -68,7 +68,8 @@
 	&__star {
 		color: #404040;
 		font-size: 12px;
-
+		display: flex;
+		align-items: baseline;
 		line-height: 30px;
 		letter-spacing: 1.8px;
 		margin-bottom: 34px;
@@ -131,6 +132,11 @@
 		text-transform: uppercase;
 		letter-spacing: 1.65px;
 		cursor: pointer;
+		transition: all 0.3s ease-in-out;
+
+		&:hover {
+			background-color: #985e5b;
+		}
 	}
 }
 
@@ -191,8 +197,6 @@
 			flex-direction: column;
 			justify-content: center;
 			min-width: 92px;
-
-
 		}
 
 		&__img {
@@ -208,6 +212,12 @@
 			line-height: 20px;
 			text-transform: uppercase;
 			letter-spacing: 2.2px;
+		}
+
+		&__star {
+			padding-top: 10px;
+			border-top: 1px solid #dcdee0;
+			margin-top: 5px;
 		}
 
 		&__text {
@@ -265,13 +275,18 @@
 			line-height: 25px;
 			text-transform: uppercase;
 			letter-spacing: 2.2px;
+
+			&-star {
+				padding: 0;
+				margin-top: 5px;
+			}
 		}
 
 		&__message {
 			width: 100%;
 		}
 
-		input.comment-form__button {
+		&__button {
 			margin: 0 auto;
 			display: block;
 			width: 180px;
@@ -282,6 +297,13 @@
 			font-weight: 700;
 			text-transform: uppercase;
 			letter-spacing: 1.65px;
+			cursor: pointer;
+			border: none;
+			transition: all 0.3s ease-in-out;
+
+			&:hover {
+				background-color: #985e5b;
+			}
 		}
 	}
 }
@@ -314,14 +336,17 @@
 		&+& {
 			margin-left: 35px;
 		}
-		&-img{
+
+		&-img {
 			margin-bottom: 30px;
 		}
-		&-name{
+
+		&-name {
 			font-weight: 700;
 			margin-bottom: 22px;
 		}
-		&-price{
+
+		&-price {
 			font-weight: 40;
 		}
 	}

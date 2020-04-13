@@ -8,9 +8,9 @@
 
 		<div class="content">
 
-			@@include('./components/_header-trans.html')
+			@@include('./components/_header.html')
 			<main>
-				<div class="reservation-bg">
+				<div class="reservation-bg bg">
 					<div class="container">
 						<div class="reservation-bg__inner bg__inner">
 							<div class="reservation-bg__text bg__text">
@@ -51,24 +51,53 @@
 					<div class="container">
 						<div class="reservation-form__title">Make a Reservation</div>
 						<form class="reservation-form__inner">
-							<i class="far fa-calendar-alt"></i>
-							<input class="datepicker login icon" id="datepicker" value='01/21/2020' required>
-							<i class="far fa-clock"></i>
-							<input class="timepicker" type="text">
-							<i class="fas fa-user-alt"></i>
-							<select class="people login">
-								<option value="1">1 people</option>
-								<option value="2">2 people</option>
-								<option value="3">3 people</option>
-								<option value="4">4 people</option>
-								<option value="5">5 people</option>
-								<option value="6">6 people</option>
-								<option value="7">7 people</option>
-								<option value="8">8 people</option>
-								<option value="9">9 people</option>
-								<option value="10">10 <people></people>
-								</option>
-							</select>
+							<div class="reservation-form__input-wrapper">
+								<div class="datepicker-wrapper">
+									<span class="icon-calendar"></span>
+									<input class="datepicker" id="datepicker" required>
+								</div>
+
+								<div class="timepicker-wrapper">
+									<span class="icon-clock"></span>
+									<select class="time-list">
+										<option value="9">9:00</option>
+										<option value="9.5">9:30</option>
+										<option value="10">10:00</option>
+										<option value="10.5">10:30</option>
+										<option value="11">11:00</option>
+										<option value="11.5">11:30</option>
+										<option value="12">12:00</option>
+										<option value="12.5">12:30</option>
+										<option value="13">13:00</option>
+										<option value="13.5">13:30</option>
+										<option value="14">14:00</option>
+										<option value="14.5">14:30</option>
+										<option value="15">15:00</option>
+										<option value="15.5">15:30</option>
+										<option value="16">16:00</option>
+										<option value="16.5">16:30</option>
+										<option value="17">17:00</option>
+										<option value="17.5">17:30</option>
+										<option value="18">18:00</option>
+									</select>
+								</div>
+
+								<div class="people-list-wrapper">
+									<span class="icon-user"></span>
+									<select class="people-list">
+										<option value="1">1 people</option>
+										<option value="2">2 people</option>
+										<option value="3">3 people</option>
+										<option value="4">4 people</option>
+										<option value="5">5 people</option>
+										<option value="6">6 people</option>
+										<option value="7">7 people</option>
+										<option value="8">8 people</option>
+										<option value="9">9 people</option>
+										<option value="10">10 people</option>
+									</select>
+								</div>
+							</div>
 							<button class="button">Find a Table</button>
 						</form>
 					</div>

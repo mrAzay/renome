@@ -1,5 +1,5 @@
-<header class="header" id="header">
-	<div class="container container-none">
+<header class="header">
+	<div class="container">
 		<div class="header__inner">
 			<div class="logo"><a href="index.html">Renome</a></div>
 			<nav class="nav">
@@ -8,10 +8,11 @@
 					<li class="nav__item"><a href="about.html">ABOUT</a></li>
 					<li class="nav__item"><a href="menu.html">MENU</a></li>
 					<li class="nav__item"><a href="reservation.html">RESERVATIONS</a></li>
-					<li class="nav__item sub-menu"><a href="blog.html">BLOG</a>
+					<li class="nav__item sub-menu">
+						<div class="sub-menu__title">BLOG &#9660;</div>
 						<ul class="sub-menu__list">
-							<li><a href="one_page.html">One Page</a></li>
 							<li><a href="portfolio.html">Portfolio</a></li>
+							<li><a href="blog.html">Articles</a></li>
 						</ul>
 					</li>
 					<li class="nav__item"><a href="shop.html">shop</a></li>
@@ -19,14 +20,18 @@
 				</ul>
 			</nav>
 			<div class="button">
-				<div class="search"><span class="icon-search"></span></i></div>
-				<div class="cart"><a href="shop-checkout.html"><span class="icon-cart"></span><span>2</span></a>
+				<div class="search"><span class="icon-search"></span></div>
+				<div class="cart">
+					<span class="icon-cart"></span><span>2</span>
 					<ul class="cart__dropdown">
 						<li class="cart__price">$44.50</li>
-						<li class="cart__view"><a href="">View Cart</a></li>
+						<li class="cart__view"><a href="shoping-cart.html">View Cart</a></li>
 						<li class="cart__check"><a href="shop-checkout.html">Checkout</a></li>
 					</ul>
 				</div>
+				<button class="burger">
+					<span class="burger__item"></span>
+				</button>
 			</div>
 		</div>
 	</div>
@@ -35,8 +40,12 @@
 			<div class="header-search__inner">
 				<input type="search" placeholder="Search...">
 				<div class="header-search__buttons">
-					<div class="header-search__search"><span class="icon-search"></span></i></div>
-					<div class="header-search__close"><i class="fas fa-times"></i></div>
+					<div class="header-search__search">
+						<span class="icon-search"></span>
+					</div>
+					<div class="header-search__close">
+						<span class="icon-cross"></span>
+					</div>
 				</div>
 			</div>
 		</div>

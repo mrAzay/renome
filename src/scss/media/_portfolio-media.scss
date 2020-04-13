@@ -1,0 +1,29 @@
+@media(max-width: 810px){
+	.portfolio-gallery__item{
+		width: calc(50% - 16px);
+		height: auto;
+		img{
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+	.filter-item{
+		width: 50%;
+		text-align: center;
+	}
+	.filter-item+.filter-item{
+		margin: 0;
+	}
+	.portfolio-gallery__filter{
+		flex-wrap: wrap;
+	}
+	.filter-item--active{
+		border: none;
+	}
+}
+
+@media(max-width: 400px){
+	.portfolio-gallery__item{
+		width: calc(100% - 16px);
+	}
+}

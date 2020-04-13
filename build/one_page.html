@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/libs.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Pacifico&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Document</title>
   </head>
@@ -16,8 +15,8 @@
 	<div class="wrapper">
 		<div class="content">
 
-			<header class="header" id="header">
-	<div class="container container-none">
+			<header class="header">
+	<div class="container">
 		<div class="header__inner">
 			<div class="logo"><a href="index.html">Renome</a></div>
 			<nav class="nav">
@@ -26,10 +25,11 @@
 					<li class="nav__item"><a href="about.html">ABOUT</a></li>
 					<li class="nav__item"><a href="menu.html">MENU</a></li>
 					<li class="nav__item"><a href="reservation.html">RESERVATIONS</a></li>
-					<li class="nav__item sub-menu"><a href="blog.html">BLOG</a>
+					<li class="nav__item sub-menu">
+						<div class="sub-menu__title">BLOG &#9660;</div>
 						<ul class="sub-menu__list">
-							<li><a href="one_page.html">One Page</a></li>
 							<li><a href="portfolio.html">Portfolio</a></li>
+							<li><a href="blog.html">Articles</a></li>
 						</ul>
 					</li>
 					<li class="nav__item"><a href="shop.html">shop</a></li>
@@ -37,14 +37,18 @@
 				</ul>
 			</nav>
 			<div class="button">
-				<div class="search"><span class="icon-search"></span></i></div>
-				<div class="cart"><a href="shop-checkout.html"><span class="icon-cart"></span><span>2</span></a>
+				<div class="search"><span class="icon-search"></span></div>
+				<div class="cart">
+					<span class="icon-cart"></span><span>2</span>
 					<ul class="cart__dropdown">
 						<li class="cart__price">$44.50</li>
-						<li class="cart__view"><a href="">View Cart</a></li>
+						<li class="cart__view"><a href="shoping-cart.html">View Cart</a></li>
 						<li class="cart__check"><a href="shop-checkout.html">Checkout</a></li>
 					</ul>
 				</div>
+				<button class="burger">
+					<span class="burger__item"></span>
+				</button>
 			</div>
 		</div>
 	</div>
@@ -53,8 +57,12 @@
 			<div class="header-search__inner">
 				<input type="search" placeholder="Search...">
 				<div class="header-search__buttons">
-					<div class="header-search__search"><span class="icon-search"></span></i></div>
-					<div class="header-search__close"><i class="fas fa-times"></i></div>
+					<div class="header-search__search">
+						<span class="icon-search"></span>
+					</div>
+					<div class="header-search__close">
+						<span class="icon-cross"></span>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -71,15 +79,15 @@
 					<div class="slider__content">
 						<div class="slider__arrows">
 							<div class="home-slider-arrow-left home-slider-arrow">
-								<i class="fas fa-chevron-left fa-lg"></i>
+								<img src="img/arrow-left.svg" alt="">
 							</div>
 							<div class="home-slider-arrow-right home-slider-arrow">
-								<i class="fas fa-chevron-right fa-lg"></i>
+								<img src="img/arrow-right.svg" alt="">
 							</div>
 						</div>
 						<div class="slider__text">
-							<div class="bg__text">made with love</div>
-							<div class="bg__subtext">for you</div>
+							<div class="bg__title">made with love</div>
+							<div class="bg__subtitle">for you</div>
 						</div>
 					</div>
 				</section>
@@ -142,8 +150,8 @@
 					<div class="container">
 						<div class="menu__inner">
 							<div class="menu__info">
-								<div class="menu__title title"> menu</div>
-								<div class="menu__subtitle subtitle">Delicious and beautiful</div>
+								<div class="menu__title title">menu</div>
+								<div class="menu__subtitle subtitle">our restaurant menu</div>
 								<div class="menu__text text">In our menu you will find a great variety of delicious food that will
 									satisfy the needs and tastes of everyone. We strive to source the highest quality ingredients for all
 									of our dishes thereby enhancing the quality of services.</div>
@@ -232,199 +240,120 @@
 							</div>
 
 							<div class="tabs__content">
-								<div class="menu__category">Appetizers 2</div>
+								<div class="menu__category">Lunch</div>
 								<div class="dish">
-									<img src="img/dish1.png" alt="" class="dish__img">
+									<img src="img/pizza.jpg" alt="" class="dish__img">
 									<div class="dish__text">
-										<div class="dish__name">Chicken wings</div>
-										<div class="dish__description">It’s all about flavour and fun, fun, fun. Toss fried chicken with a
-											finger-licking sauce spiked with chilli and fresh ginger.</div>
+										<div class="dish__name">Pizza</div>
+										<div class="dish__description">There should be a description.</div>
 									</div>
 									<div class="dish__price">$9<span>.95</span></div>
 								</div>
 
 								<div class="dish">
-									<img src="img/dish2.png" alt="" class="dish__img">
+									<img src="img/Omlet.jpg" alt="" class="dish__img">
 									<div class="dish__text">
-										<div class="dish__name">Dumplings</div>
-										<div class="dish__description">Small dumplings filled with spiced lamb. Tossed in a tomato sauce and
-											served with sumac-flavoured Greek yoghurt.</div>
+										<div class="dish__name">Omlet</div>
+										<div class="dish__description">There should be a description.</div>
 									</div>
 									<div class="dish__price">$5<span>.70</span></div>
 								</div>
 
 								<div class="dish">
-									<img src="img/dish3.png" alt="" class="dish__img">
+									<img src="img/kebab.jpg" alt="" class="dish__img">
 									<div class="dish__text">
-										<div class="dish__name">French onion soup</div>
-										<div class="dish__description">French onion soup is deeply savoury and hearty - and cheesy croutons
-											make it extra special!</div>
+										<div class="dish__name">Kebab</div>
+										<div class="dish__description">There should be a description.</div>
 									</div>
 									<div class="dish__price">$5<span>.80</span></div>
 								</div>
 
 								<div class="dish">
-									<img src="img/dish4.png" alt="" class="dish__img">
+									<img src="img/fish.jpg" alt="" class="dish__img">
 									<div class="dish__text">
-										<div class="dish__name">Mini chilli pretzels</div>
-										<div class="dish__description">These freshly-baked savouries beat anything out of a packet.</div>
+										<div class="dish__name">Fish</div>
+										<div class="dish__description">There should be a description.</div>
 									</div>
 									<div class="dish__price">$2<span>.10</span></div>
-								</div>
-								<div class="menu__category">Entrees</div>
-
-								<div class="dish">
-									<img src="img/dish1.png" alt="" class="dish__img">
-									<div class="dish__text">
-										<div class="dish__name">Chicken wings</div>
-										<div class="dish__description">It’s all about flavour and fun, fun, fun. Toss fried chicken with a
-											finger-licking sauce spiked with chilli and fresh ginger.</div>
-									</div>
-									<div class="dish__price">$9<span>.95</span></div>
-								</div>
-
-								<div class="dish">
-									<img src="img/dish1.png" alt="" class="dish__img">
-									<div class="dish__text">
-										<div class="dish__name">Chicken wings</div>
-										<div class="dish__description">It’s all about flavour and fun, fun, fun. Toss fried chicken with a
-											finger-licking sauce spiked with chilli and fresh ginger.</div>
-									</div>
-									<div class="dish__price">$9<span>.95</span></div>
 								</div>
 
 							</div>
 
 
 							<div class="tabs__content">
-								<div class="menu__category">Appetizers 3</div>
+								<div class="menu__category">No alcohol</div>
 								<div class="dish">
-									<img src="img/dish1.png" alt="" class="dish__img">
+									<img src="img/milk.jpeg" alt="" class="dish__img">
 									<div class="dish__text">
-										<div class="dish__name">Chicken wings</div>
-										<div class="dish__description">It’s all about flavour and fun, fun, fun. Toss fried chicken with a
-											finger-licking sauce spiked with chilli and fresh ginger.</div>
+										<div class="dish__name">Milk</div>
+										<div class="dish__description">There should be a description.</div>
 									</div>
 									<div class="dish__price">$9<span>.95</span></div>
 								</div>
 
 								<div class="dish">
-									<img src="img/dish2.png" alt="" class="dish__img">
+									<img src="img/coffe.jpg" alt="" class="dish__img">
 									<div class="dish__text">
-										<div class="dish__name">Dumplings</div>
-										<div class="dish__description">Small dumplings filled with spiced lamb. Tossed in a tomato sauce and
-											served with sumac-flavoured Greek yoghurt.</div>
+										<div class="dish__name">Coffe</div>
+										<div class="dish__description">There should be a description.</div>
 									</div>
 									<div class="dish__price">$5<span>.70</span></div>
 								</div>
 
 								<div class="dish">
-									<img src="img/dish3.png" alt="" class="dish__img">
+									<img src="img/waterglass.jpg" alt="" class="dish__img">
 									<div class="dish__text">
-										<div class="dish__name">French onion soup</div>
-										<div class="dish__description">French onion soup is deeply savoury and hearty - and cheesy croutons
-											make it extra special!</div>
+										<div class="dish__name">Water</div>
+										<div class="dish__description">There should be a description.</div>
 									</div>
 									<div class="dish__price">$5<span>.80</span></div>
 								</div>
-
-								<div class="dish">
-									<img src="img/dish4.png" alt="" class="dish__img">
-									<div class="dish__text">
-										<div class="dish__name">Mini chilli pretzels</div>
-										<div class="dish__description">These freshly-baked savouries beat anything out of a packet.</div>
-									</div>
-									<div class="dish__price">$2<span>.10</span></div>
-								</div>
-								<div class="menu__category">Entrees</div>
-
-								<div class="dish">
-									<img src="img/dish1.png" alt="" class="dish__img">
-									<div class="dish__text">
-										<div class="dish__name">Chicken wings</div>
-										<div class="dish__description">It’s all about flavour and fun, fun, fun. Toss fried chicken with a
-											finger-licking sauce spiked with chilli and fresh ginger.</div>
-									</div>
-									<div class="dish__price">$9<span>.95</span></div>
-								</div>
-
-								<div class="dish">
-									<img src="img/dish1.png" alt="" class="dish__img">
-									<div class="dish__text">
-										<div class="dish__name">Chicken wings</div>
-										<div class="dish__description">It’s all about flavour and fun, fun, fun. Toss fried chicken with a
-											finger-licking sauce spiked with chilli and fresh ginger.</div>
-									</div>
-									<div class="dish__price">$9<span>.95</span></div>
-								</div>
-
 							</div>
 
 
 							<div class="tabs__content">
-								<div class="menu__category">Appetizers 4</div>
+								<div class="menu__category">Desserts</div>
 								<div class="dish">
-									<img src="img/dish1.png" alt="" class="dish__img">
+									<img src="img/Angel cake.jpg" alt="" class="dish__img">
 									<div class="dish__text">
-										<div class="dish__name">Chicken wings</div>
-										<div class="dish__description">It’s all about flavour and fun, fun, fun. Toss fried chicken with a
-											finger-licking sauce spiked with chilli and fresh ginger.</div>
+										<div class="dish__name">Angel cake</div>
+										<div class="dish__description">There should be a description.</div>
 									</div>
 									<div class="dish__price">$9<span>.95</span></div>
 								</div>
 
 								<div class="dish">
-									<img src="img/dish2.png" alt="" class="dish__img">
+									<img src="img/Apple cake.jpg" alt="" class="dish__img">
 									<div class="dish__text">
-										<div class="dish__name">Dumplings</div>
-										<div class="dish__description">Small dumplings filled with spiced lamb. Tossed in a tomato sauce and
-											served with sumac-flavoured Greek yoghurt.</div>
+										<div class="dish__name">Apple cake</div>
+										<div class="dish__description">There should be a description.</div>
 									</div>
 									<div class="dish__price">$5<span>.70</span></div>
 								</div>
 
 								<div class="dish">
-									<img src="img/dish3.png" alt="" class="dish__img">
+									<img src="img/Babka.jpg" alt="" class="dish__img">
 									<div class="dish__text">
-										<div class="dish__name">French onion soup</div>
-										<div class="dish__description">French onion soup is deeply savoury and hearty - and cheesy croutons
-											make it extra special!</div>
+										<div class="dish__name">Babka</div>
+										<div class="dish__description">There should be a description.</div>
 									</div>
 									<div class="dish__price">$5<span>.80</span></div>
 								</div>
 
 								<div class="dish">
-									<img src="img/dish4.png" alt="" class="dish__img">
+									<img src="img/Cupcake.jpg" alt="" class="dish__img">
 									<div class="dish__text">
-										<div class="dish__name">Mini chilli pretzels</div>
-										<div class="dish__description">These freshly-baked savouries beat anything out of a packet.</div>
+										<div class="dish__name">Cupcake</div>
+										<div class="dish__description">There should be a description.</div>
 									</div>
 									<div class="dish__price">$2<span>.10</span></div>
 								</div>
-								<div class="menu__category">Entrees</div>
-
-								<div class="dish">
-									<img src="img/dish1.png" alt="" class="dish__img">
-									<div class="dish__text">
-										<div class="dish__name">Chicken wings</div>
-										<div class="dish__description">It’s all about flavour and fun, fun, fun. Toss fried chicken with a
-											finger-licking sauce spiked with chilli and fresh ginger.</div>
-									</div>
-									<div class="dish__price">$9<span>.95</span></div>
-								</div>
-
-								<div class="dish">
-									<img src="img/dish1.png" alt="" class="dish__img">
-									<div class="dish__text">
-										<div class="dish__name">Chicken wings</div>
-										<div class="dish__description">It’s all about flavour and fun, fun, fun. Toss fried chicken with a
-											finger-licking sauce spiked with chilli and fresh ginger.</div>
-									</div>
-									<div class="dish__price">$9<span>.95</span></div>
-								</div>
 							</div>
+
+
 						</div>
 					</div>
+
 				</section>
 				<section class="quote">
 					<div class="container">
@@ -447,7 +376,7 @@
 							</div>
 
 							<div class="reservation__info">
-								<div class="reservation__title title"> reservation</div>
+								<div class="reservation__title title">reservation</div>
 								<div class="reservation__subtitle subtitle">Book your table at our restaurant now!</div>
 								<div class="reservation__text text">
 									<p>
@@ -463,28 +392,37 @@
 							</div>
 						</div>
 				</section>
-				<section class="reservation-form reservation-form--one-page-edits">
+
+				<section class="reservation-form reservation-form--no-border">
 					<div class="container">
-						<div class="reservation-form__title ">Make a Reservation</div>
+						<div class="reservation-form__title">Make a Reservation</div>
 						<form class="reservation-form__inner">
-							<i class="far fa-calendar-alt"></i>
-							<input class="datepicker login icon" id="datepicker" value='01/21/2020' required>
-							<i class="far fa-clock"></i>
-							<input class="timepicker" type="text">
-							<i class="fas fa-user-alt"></i>
-							<select class="people login">
-								<option value="1">1 people</option>
-								<option value="2">2 people</option>
-								<option value="3">3 people</option>
-								<option value="4">4 people</option>
-								<option value="5">5 people</option>
-								<option value="6">6 people</option>
-								<option value="7">7 people</option>
-								<option value="8">8 people</option>
-								<option value="9">9 people</option>
-								<option value="10">10 <people></people>
-								</option>
-							</select>
+
+							<div class="datepicker-wrapper">
+								<span class="icon-calendar"></span>
+								<input class="datepicker" id="datepicker" required>
+							</div>
+
+							<div class="timepicker-wrapper">
+								<span class="icon-clock"></span>
+								<input class="timepicker" type="time" value="09:00" min="09:00">
+							</div>
+
+							<div class="people-list-wrapper">
+								<span class="icon-user"></span>
+								<select class="people-list">
+									<option value="1">1 people</option>
+									<option value="2">2 people</option>
+									<option value="3">3 people</option>
+									<option value="4">4 people</option>
+									<option value="5">5 people</option>
+									<option value="6">6 people</option>
+									<option value="7">7 people</option>
+									<option value="8">8 people</option>
+									<option value="9">9 people</option>
+									<option value="10">10 people</option>
+								</select>
+							</div>
 							<button class="button">Find a Table</button>
 						</form>
 					</div>
@@ -543,18 +481,17 @@
 						</div>
 					</div>
 				</section>
-				<section class="contact">
+				<section class="contact-home">
 					<div class="container">
-						<div class="contact__inner">
-							<div class="contact__info">
-								<div class="contact__title title">contact</div>
-								<div class="contact__subtitle subtitle">we welcome you in our restaurant</div>
-								<div class="contact__text text">Please feel free to contact us with any questions or to make
-									reservations.
-									If no one is available to take your call, please leave a message. We will contact you as soon as
-									possible.</div>
+						<div class="contact-home__inner">
+							<div class="contact-home__info">
+								<div class="contact-home__title title">contact</div>
+								<div class="contact_-home_subtitle subtitle">we welcome you in our restaurant</div>
+								<div class="contact-home__text text">Please feel free to contact us with any questions or to make
+									reservations. If no one is available to take your call, please leave a message. We will contact you as
+									soon as possible.</div>
 							</div>
-							<div class="contact__img">
+							<div class="contact-home__img">
 								<img class="img-right" src="img/contact1.png" alt="">
 								<img src="img/contact2.png" alt="">
 							</div>
@@ -599,25 +536,19 @@
 		<footer class="footer">
 	<div class="container">
 		<div class="footer__inner">
-			<div class="footer__logo">Renome</div>
+			<div class="footer__logo"> <a href="index.html">Renome</a></div>
 			<div class="footer__copyright">Copyright 2015 Renome by Estetiq</div>
 			<div class="footer__social">
-				<ul>
-					<li class="social-text">Follow US:</li>
-					<li class="social-link facebook">
-						<div class="social-link__wrapper">
-							<a href="#"><span class="icon-facebook"></span></i></a>
-						</div>
+				<li class="footer__social-text">Follow US:</li>
+				<ul class="footer__social-list">
+					<li class="footer__social-link facebook">
+						<a href="#"><span class="icon-facebook"></span></a>
 					</li>
-					<li class="social-link twitter">
-						<div class="social-link__wrapper">
-							<a href="#"><span class="icon-twitter"></span></a>
-						</div>
+					<li class="footer__social-link twitter">
+						<a href="#"><span class="icon-twitter"></span></a>
 					</li>
-					<li class="social-link google">
-						<div class="social-link__wrapper">
-							<a href="#"><span class="icon-google-plus"></span></i></a>
-						</div>
+					<li class="footer__social-link google">
+						<a href="#"><span class="icon-google-plus"></span></a>
 					</li>
 				</ul>
 			</div>

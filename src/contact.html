@@ -8,13 +8,13 @@
 
 		<div class="content">
 
-			@@include('./components/_header-trans.html')
+			@@include('./components/_header.html')
 			<main>
-				<section class="contact-bg">
+				<section class="contact-bg bg">
 					<div class="container">
 						<div class="contact__inner bg__inner">
 							<div class="contact__text bg__text">
-								<div class="contact__title bg__title">blog</div>
+								<div class="contact__title bg__title">contact</div>
 								<div class="contact__subtitle bg__subtitle">we welcome you in our restaurant</div>
 							</div>
 						</div>
@@ -43,27 +43,38 @@
 						<div class="contact-form__inner">
 							<form class="form">
 								<div class="form__title contact-form__title">Write a message</div>
-								<input class="form__first-name form-input" type="text" placeholder="First Name *">
-								<input class="form__last-name form-input" type="text" placeholder="Last Name *">
+								<input class="form__first-name form-input" type="text" placeholder="First Name *" maxlength="25">
+								<input class="form__last-name form-input" type="text" placeholder="Last Name *" maxlength="25">
 								<input class="form__email form-input" type="email" placeholder="Email *">
 								<select class="form__select" name="subject" id="subject">
 									<option value="Subject" selected>Subject</option>
 									<option value="Subject 2">Subject 2</option>
 									<option value="Subject 3">Subject 3</option>
 								</select>
-								<input class="form__message form-input" type="text" placeholder="Message *">
+								<textarea class="comments-form__message form-input" placeholder="Message *" rows="5"
+									cols="45"></textarea>
 								<input class="form__button" type="button" value="send" type="submit">
 
 
 							</form>
 							<div class="contact">
-								<div class="contact__title contact-form__title">Contact Details</div>
-								<div class="contact__name">Address</div>
-								<div class="contact__value">355 E 5TH ST, MANHATTAN, NY 10003</div>
-								<div class="contact__name">Phone</div>
-								<div class="contact__value">+1 939 777 55 33</div>
-								<div class="contact__name">email</div>
-								<div class="contact__value">reservation@renome.com</div>
+								<div class="contact__title-wrapper">
+									<div class="contact__title contact-form__title">Contact Details</div>
+								</div>
+								<div class="contact-content">
+									<div class="contact__item-wrapper">
+										<div class="contact__name">Address</div>
+										<div class="contact__value">355 E 5TH ST, MANHATTAN, NY 10003</div>
+									</div>
+									<div class="contact__item-wrapper">
+										<div class="contact__name">Phone</div>
+										<div class="contact__value">+1 939 777 55 33</div>
+									</div>
+									<div class="contact__item-wrapper">
+										<div class="contact__name">email</div>
+										<div class="contact__value">reservation@renome.com</div>
+									</div>
+								</div>
 
 							</div>
 						</div>

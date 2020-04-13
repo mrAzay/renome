@@ -1,17 +1,5 @@
 .about-bg {
-  position: relative;
   background-image: url(../img/bg-about.jpg);
-  width: 100%;
-  height: 700px;
-  background-repeat: no-repeat;
-  &::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 700px;
-    background-color: #1e2633;
-    opacity: 0.5;
-  }
 }
 
 .about__history {
@@ -28,7 +16,7 @@
   &__info {
     margin-left: 135px;
     text-align: right;
-    width: 320px;
+    max-width: 320px;
   }
   &__img {
     margin-right: 127px;

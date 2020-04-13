@@ -1,11 +1,89 @@
 .header {
   background-color: #fff;
-  position: absolute;
   top: 0;
   right: 0;
   width: 100%;
   position: fixed;
   z-index: 9999;
+  transition: all .3s ease-in-out;
+
+  &.out {
+    transform: translateY(-100%);
+  }
+
+  & a {
+    transition: all .3s ease-in-out;
+  }
+
+  .burger {
+    display: none;
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 18px;
+    height: 18px;
+    font-size: 0;
+    text-indent: -9999px;
+    appearance: none;
+    box-shadow: none;
+    border-radius: none;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+
+    &:focus {
+      outline: none;
+    }
+
+    &__item {
+      display: block;
+      position: absolute;
+      top: 8px;
+      left: 0;
+      height: 2px;
+      width: 18px;
+      background-color: #000;
+
+
+      &::after,
+      &::before {
+        content: '';
+        position: absolute;
+        display: block;
+        left: 0;
+        width: 18px;
+        height: 2px;
+        background-color: #000;
+        transition: all 0.3s ease;
+      }
+
+      &::before {
+        top: -6px;
+      }
+
+      &::after {
+        bottom: -6px;
+      }
+    }
+  }
+
+  .burger--active {
+    .burger__item {
+      background: none;
+    }
+
+    .burger__item::before {
+      top: 0;
+      transform: rotate(45deg);
+    }
+
+    .burger__item::after {
+      bottom: 0;
+      transform: rotate(-45deg);
+    }
+  }
 
   .page-active {
     a {
@@ -70,6 +148,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 36px 0;
+    transition: all 0.5s ease-in-out;
 
     .logo {
       font-family: "Pacifico", cursive;
@@ -78,9 +157,13 @@
 
     .nav {
       margin-left: auto;
-
+      
       .sub-menu {
         position: relative;
+      }
+
+      .sub-menu__title {
+        cursor: pointer;
       }
 
       .sub-menu__list {
@@ -95,10 +178,6 @@
         a {
           background-color: #fff;
           padding: 20px;
-
-          &:hover {
-            color: #985e5b;
-          }
         }
       }
 
@@ -138,6 +217,16 @@
         cursor: pointer;
         position: relative;
 
+        &>a {
+          display: flex;
+          align-items: flex-end;
+        }
+
+        .icon-cart {
+          font-weight: 400;
+          font-size: 16px;
+        }
+
         &__price {
           cursor: default;
         }
@@ -150,13 +239,12 @@
         }
 
         &__dropdown {
-          padding-top: 20px;
           display: none;
           position: absolute;
           z-index: 1000;
           text-align: center;
           left: -45px;
-          top: 18px;
+          top: 59px;
           cursor: auto;
 
           li {
@@ -168,10 +256,7 @@
             font-size: 12px;
             width: 120px;
             display: inherit;
-
-            a:hover {
-              color: #985e5b;
-            }
+            margin-bottom: -1px;
           }
         }
       }

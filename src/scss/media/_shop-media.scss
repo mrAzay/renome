@@ -1,0 +1,17 @@
+@media(max-width: 900px) {
+	.shop-gallery__item{
+		flex-basis: calc(50% - 35px);
+	}
+}
+
+
+@media(max-width: 600px) {
+	.shop-gallery__item{
+		flex-basis: 100%;
+		margin-left: 0;
+	}
+	.shop-gallery__content{
+		margin-left: 0;
+		justify-content: center;
+	}
+}

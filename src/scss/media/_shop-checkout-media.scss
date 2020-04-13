@@ -1,0 +1,45 @@
+@media(max-width: 893px) {
+
+	.form-section .form__first-name,
+	.form-section .form__last-name,
+	.form-section .form__county,
+	.form-section .form__postcode,
+	.form-section .form__email,
+	.form-section .form__phone {
+		width: 100%;
+	}
+
+	.form-section .form__first-name,
+	.form-section .form__county,
+	.form-section .form__email {
+		margin-right: 0;
+	}
+}
+
+@media(max-width:500px) {
+	.form-section .form .order__withdrawals>*>*:first-child{
+		width: auto;
+	}
+	.form-section .form .order__withdrawals>*{
+		justify-content: space-between;
+	}
+}
+@media(max-width:408px) {
+	.form-section .form .order__checkout label {
+		flex-direction: column;
+	}
+
+	.paypal__text {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.form-section .form .order__checkout-item{
+		align-items: flex-start;
+	}
+	.form-section .form .order__checkout label img{
+		margin-left: 0;
+	}
+	.container > .container-small {
+		padding: 0;
+	}
+}

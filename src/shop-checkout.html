@@ -8,9 +8,9 @@
 
 		<div class="content">
 
-			@@include('./components/_header-trans.html')
+			@@include('./components/_header.html')
 			<main>
-				<section class="checkout-bg">
+				<section class="checkout-bg bg">
 					<div class="container">
 						<div class="checkout-bg__inner bg__inner">
 							<div class="checkout-bg__text bg__text">
@@ -186,7 +186,7 @@
 										</div>
 										<div class="order__checkout">
 											<div class="order__checkout-item">
-												<input type="radio" name="checkout" id="bank">
+												<input type="radio" name="checkout" id="bank" checked>
 												<label for="bank">Direct Bank Transfer</label>
 												<div class="order__checkout-item-text">
 													Make your payment directly into our bank account. Please use your Order ID as the payment
@@ -199,10 +199,15 @@
 											</div>
 											<div class="order__checkout-item">
 												<input type="radio" name="checkout" id="paypal">
-												<label for="paypal">Paypal
-													<img src="img/Visa.svg" alt="">
-													<img src="img/Mastercard.svg" alt="">
-													<img src="img/PayPal.png" alt="">
+												<label for="paypal">
+													<div class="paypal__text">
+														Paypal
+													</div>
+													<div class="paypal__cards">
+														<img src="img/Visa.svg" alt="">
+														<img src="img/Mastercard.svg" alt="">
+														<img src="img/PayPal.png" alt="">
+													</div>
 												</label>
 
 											</div>

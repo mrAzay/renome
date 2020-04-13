@@ -1,0 +1,32 @@
+@media(max-width: 800px) {
+	.reservation-form__input-wrapper {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+
+	.people-list-wrapper .icon-user,
+	.datepicker-wrapper .icon-calendar,
+	.icon-clock {
+		position: static;
+		margin-right: 10px;
+	}
+
+	.datepicker-wrapper,
+	.people-list-wrapper,
+	.timepicker-wrapper {
+		width: 100%;
+	}
+
+	.reservation-form input, 
+	.reservation-form select{
+		width: 100%;
+	}
+	.people-list-wrapper,
+	.timepicker-wrapper {
+		margin-top: 40px;
+	}
+	.reservation-form{
+		padding-bottom: 50px;
+	}
+}

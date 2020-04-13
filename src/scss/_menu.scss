@@ -1,22 +1,12 @@
 .menu-bg {
   background-image: url(../img/menu-bg.png);
-  width: 100%;
-  height: 700px;
-  background-repeat: no-repeat;
-  position: relative;
-  &::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 700px;
-    background-color: #1e2633;
-    opacity: 0.7;
-  }
+
 }
 
 .menu-tabs {
   font-size: 12px;
   padding-bottom: 150px;
+
   .tabs {
     &__caption {
       font-weight: 700;
@@ -25,13 +15,16 @@
       border-bottom: 1px solid #eee;
       display: flex;
       justify-content: center;
+
       li {
         display: inline-block;
         cursor: pointer;
-        & + li {
+
+        &+li {
           margin-left: 92px;
         }
       }
+
       .active {
         color: #985e5b;
         border-bottom: 2px solid #985e5b;
@@ -39,6 +32,7 @@
       }
     }
   }
+
   .menu__category {
     margin: 80px 0 60px 143px;
     color: #1e2633;
@@ -47,16 +41,27 @@
     font-weight: 400;
     line-height: 24px;
   }
+
   .dish {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 50px 0;
-		position: relative;
+    position: relative;
+
+    img {
+      width: 85px;
+      height: 85px;
+      border-radius: 50%;
+      object-fit: cover;
+      position: relative;
+    }
+
     &__text {
       flex-grow: 1;
       margin-left: 55px;
     }
+
     &__name {
       color: #1e2633;
       font-size: 14px;
@@ -64,27 +69,33 @@
       line-height: 24px;
       letter-spacing: 0.7px;
     }
+
     &__description {
       color: #404040;
       font-size: 12px;
+      font-family: axis;
       line-height: 24px;
       letter-spacing: 1.8px;
-      width: 750px;
+      max-width: 750px;
     }
+
     &__price {
       font-family: "jaapokkienchance-regular", sans-serif;
       font-size: 25px;
       line-height: 20px;
       color: #1e2633;
       letter-spacing: 1.25px;
+
       span {
         color: #dcdee0;
       }
     }
   }
+
   .tabs__content {
     display: none;
   }
+
   .tabs__content.active {
     display: block;
   }

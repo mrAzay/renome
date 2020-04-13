@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/libs.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Pacifico&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Document</title>
   </head>
@@ -17,36 +16,40 @@
 
 		<div class="content">
 
-			<header class="header" id="header-trans">
-	<div class="container container-none">
+			<header class="header">
+	<div class="container">
 		<div class="header__inner">
-			<div class="logo">Renome</div>
-			<nav class="nav" id="nav">
-				<ul class="nav__list" id="ddmenu">
-					<li class="nav__item"><a href="/index.html">HOME</a></li>
-					<li class="nav__item"><a href="/about.html">ABOUT</a></li>
-					<li class="nav__item"><a href="/menu.html">MENU</a></li>
-					<li class="nav__item"><a href="/reservation.html">RESERVATIONS</a></li>
-					<li class="nav__item sub-menu"><a href="/blog.html">BLOG</a>
+			<div class="logo"><a href="index.html">Renome</a></div>
+			<nav class="nav">
+				<ul class="nav__list"">
+					<li class=" nav__item"><a href="index.html">HOME</a></li>
+					<li class="nav__item"><a href="about.html">ABOUT</a></li>
+					<li class="nav__item"><a href="menu.html">MENU</a></li>
+					<li class="nav__item"><a href="reservation.html">RESERVATIONS</a></li>
+					<li class="nav__item sub-menu">
+						<div class="sub-menu__title">BLOG &#9660;</div>
 						<ul class="sub-menu__list">
-							<li><a href="../one_page.html">One Page</a></li>
-							<li><a href="#">Portfolio</a></li>
-							<li><a href="#">Shortcodes</a></li>
+							<li><a href="portfolio.html">Portfolio</a></li>
+							<li><a href="blog.html">Articles</a></li>
 						</ul>
 					</li>
-					<li class="nav__item"><a href="#">shop</a></li>
-					<li class="nav__item"><a href="#">CONTACT</a></li>
+					<li class="nav__item"><a href="shop.html">shop</a></li>
+					<li class="nav__item"><a href="contact.html">CONTACT</a></li>
 				</ul>
 			</nav>
 			<div class="button">
-				<div class="search"><span class="icon-search"></span></i></div>
-				<div class="cart"><span class="icon-cart"></span> <span>2</span>
+				<div class="search"><span class="icon-search"></span></div>
+				<div class="cart">
+					<span class="icon-cart"></span><span>2</span>
 					<ul class="cart__dropdown">
-						<li class="cart__price"><a href="#">$44.50</a></li>
-						<li class="cart__view"><a href="#">View Cart</a></li>
-						<li class="cart__check"><a href="#">Checkout</a></li>
+						<li class="cart__price">$44.50</li>
+						<li class="cart__view"><a href="shoping-cart.html">View Cart</a></li>
+						<li class="cart__check"><a href="shop-checkout.html">Checkout</a></li>
 					</ul>
 				</div>
+				<button class="burger">
+					<span class="burger__item"></span>
+				</button>
 			</div>
 		</div>
 	</div>
@@ -55,19 +58,23 @@
 			<div class="header-search__inner">
 				<input type="search" placeholder="Search...">
 				<div class="header-search__buttons">
-					<div class="header-search__search"><span class="icon-search"></span></i></div>
-					<div class="header-search__close"><i class="fas fa-times"></i></div>
+					<div class="header-search__search">
+						<span class="icon-search"></span>
+					</div>
+					<div class="header-search__close">
+						<span class="icon-cross"></span>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </header>
 			<main>
-				<section class="contact-bg">
+				<section class="contact-bg bg">
 					<div class="container">
 						<div class="contact__inner bg__inner">
 							<div class="contact__text bg__text">
-								<div class="contact__title bg__title">blog</div>
+								<div class="contact__title bg__title">contact</div>
 								<div class="contact__subtitle bg__subtitle">we welcome you in our restaurant</div>
 							</div>
 						</div>
@@ -96,27 +103,38 @@
 						<div class="contact-form__inner">
 							<form class="form">
 								<div class="form__title contact-form__title">Write a message</div>
-								<input class="form__first-name form-input" type="text" placeholder="First Name *">
-								<input class="form__last-name form-input" type="text" placeholder="Last Name *">
+								<input class="form__first-name form-input" type="text" placeholder="First Name *" maxlength="25">
+								<input class="form__last-name form-input" type="text" placeholder="Last Name *" maxlength="25">
 								<input class="form__email form-input" type="email" placeholder="Email *">
 								<select class="form__select" name="subject" id="subject">
 									<option value="Subject" selected>Subject</option>
 									<option value="Subject 2">Subject 2</option>
 									<option value="Subject 3">Subject 3</option>
 								</select>
-								<input class="form__message form-input" type="text" placeholder="Message *">
+								<textarea class="comments-form__message form-input" placeholder="Message *" rows="5"
+									cols="45"></textarea>
 								<input class="form__button" type="button" value="send" type="submit">
 
 
 							</form>
 							<div class="contact">
-								<div class="contact__title contact-form__title">Contact Details</div>
-								<div class="contact__name">Address</div>
-								<div class="contact__value">355 E 5TH ST, MANHATTAN, NY 10003</div>
-								<div class="contact__name">Phone</div>
-								<div class="contact__value">+1 939 777 55 33</div>
-								<div class="contact__name">email</div>
-								<div class="contact__value">reservation@renome.com</div>
+								<div class="contact__title-wrapper">
+									<div class="contact__title contact-form__title">Contact Details</div>
+								</div>
+								<div class="contact-content">
+									<div class="contact__item-wrapper">
+										<div class="contact__name">Address</div>
+										<div class="contact__value">355 E 5TH ST, MANHATTAN, NY 10003</div>
+									</div>
+									<div class="contact__item-wrapper">
+										<div class="contact__name">Phone</div>
+										<div class="contact__value">+1 939 777 55 33</div>
+									</div>
+									<div class="contact__item-wrapper">
+										<div class="contact__name">email</div>
+										<div class="contact__value">reservation@renome.com</div>
+									</div>
+								</div>
 
 							</div>
 						</div>
@@ -135,25 +153,19 @@
 		<footer class="footer">
 	<div class="container">
 		<div class="footer__inner">
-			<div class="footer__logo">Renome</div>
+			<div class="footer__logo"> <a href="index.html">Renome</a></div>
 			<div class="footer__copyright">Copyright 2015 Renome by Estetiq</div>
 			<div class="footer__social">
-				<ul>
-					<li class="social-text">Follow US:</li>
-					<li class="social-link facebook">
-						<div class="social-link__wrapper">
-							<a href="#"><span class="icon-facebook"></span></i></a>
-						</div>
+				<li class="footer__social-text">Follow US:</li>
+				<ul class="footer__social-list">
+					<li class="footer__social-link facebook">
+						<a href="#"><span class="icon-facebook"></span></a>
 					</li>
-					<li class="social-link twitter">
-						<div class="social-link__wrapper">
-							<a href="#"><span class="icon-twitter"></span></a>
-						</div>
+					<li class="footer__social-link twitter">
+						<a href="#"><span class="icon-twitter"></span></a>
 					</li>
-					<li class="social-link google">
-						<div class="social-link__wrapper">
-							<a href="#"><span class="icon-google-plus"></span></i></a>
-						</div>
+					<li class="footer__social-link google">
+						<a href="#"><span class="icon-google-plus"></span></a>
 					</li>
 				</ul>
 			</div>

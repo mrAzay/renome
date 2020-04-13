@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/libs.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Pacifico&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Document</title>
   </head>
@@ -17,36 +16,40 @@
 
 		<div class="content">
 
-			<header class="header" id="header-trans">
-	<div class="container container-none">
+			<header class="header">
+	<div class="container">
 		<div class="header__inner">
-			<div class="logo">Renome</div>
-			<nav class="nav" id="nav">
-				<ul class="nav__list" id="ddmenu">
-					<li class="nav__item"><a href="/index.html">HOME</a></li>
-					<li class="nav__item"><a href="/about.html">ABOUT</a></li>
-					<li class="nav__item"><a href="/menu.html">MENU</a></li>
-					<li class="nav__item"><a href="/reservation.html">RESERVATIONS</a></li>
-					<li class="nav__item sub-menu"><a href="/blog.html">BLOG</a>
+			<div class="logo"><a href="index.html">Renome</a></div>
+			<nav class="nav">
+				<ul class="nav__list"">
+					<li class=" nav__item"><a href="index.html">HOME</a></li>
+					<li class="nav__item"><a href="about.html">ABOUT</a></li>
+					<li class="nav__item"><a href="menu.html">MENU</a></li>
+					<li class="nav__item"><a href="reservation.html">RESERVATIONS</a></li>
+					<li class="nav__item sub-menu">
+						<div class="sub-menu__title">BLOG &#9660;</div>
 						<ul class="sub-menu__list">
-							<li><a href="../one_page.html">One Page</a></li>
-							<li><a href="#">Portfolio</a></li>
-							<li><a href="#">Shortcodes</a></li>
+							<li><a href="portfolio.html">Portfolio</a></li>
+							<li><a href="blog.html">Articles</a></li>
 						</ul>
 					</li>
-					<li class="nav__item"><a href="#">shop</a></li>
-					<li class="nav__item"><a href="#">CONTACT</a></li>
+					<li class="nav__item"><a href="shop.html">shop</a></li>
+					<li class="nav__item"><a href="contact.html">CONTACT</a></li>
 				</ul>
 			</nav>
 			<div class="button">
-				<div class="search"><span class="icon-search"></span></i></div>
-				<div class="cart"><span class="icon-cart"></span> <span>2</span>
+				<div class="search"><span class="icon-search"></span></div>
+				<div class="cart">
+					<span class="icon-cart"></span><span>2</span>
 					<ul class="cart__dropdown">
-						<li class="cart__price"><a href="#">$44.50</a></li>
-						<li class="cart__view"><a href="#">View Cart</a></li>
-						<li class="cart__check"><a href="#">Checkout</a></li>
+						<li class="cart__price">$44.50</li>
+						<li class="cart__view"><a href="shoping-cart.html">View Cart</a></li>
+						<li class="cart__check"><a href="shop-checkout.html">Checkout</a></li>
 					</ul>
 				</div>
+				<button class="burger">
+					<span class="burger__item"></span>
+				</button>
 			</div>
 		</div>
 	</div>
@@ -55,15 +58,19 @@
 			<div class="header-search__inner">
 				<input type="search" placeholder="Search...">
 				<div class="header-search__buttons">
-					<div class="header-search__search"><span class="icon-search"></span></i></div>
-					<div class="header-search__close"><i class="fas fa-times"></i></div>
+					<div class="header-search__search">
+						<span class="icon-search"></span>
+					</div>
+					<div class="header-search__close">
+						<span class="icon-cross"></span>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </header>
 			<main>
-				<div class="reservation-bg">
+				<div class="reservation-bg bg">
 					<div class="container">
 						<div class="reservation-bg__inner bg__inner">
 							<div class="reservation-bg__text bg__text">
@@ -104,24 +111,53 @@
 					<div class="container">
 						<div class="reservation-form__title">Make a Reservation</div>
 						<form class="reservation-form__inner">
-							<i class="far fa-calendar-alt"></i>
-							<input class="datepicker login icon" id="datepicker" value='01/21/2020' required>
-							<i class="far fa-clock"></i>
-							<input class="timepicker" type="text">
-							<i class="fas fa-user-alt"></i>
-							<select class="people login">
-								<option value="1">1 people</option>
-								<option value="2">2 people</option>
-								<option value="3">3 people</option>
-								<option value="4">4 people</option>
-								<option value="5">5 people</option>
-								<option value="6">6 people</option>
-								<option value="7">7 people</option>
-								<option value="8">8 people</option>
-								<option value="9">9 people</option>
-								<option value="10">10 <people></people>
-								</option>
-							</select>
+							<div class="reservation-form__input-wrapper">
+								<div class="datepicker-wrapper">
+									<span class="icon-calendar"></span>
+									<input class="datepicker" id="datepicker" required>
+								</div>
+
+								<div class="timepicker-wrapper">
+									<span class="icon-clock"></span>
+									<select class="time-list">
+										<option value="9">9:00</option>
+										<option value="9.5">9:30</option>
+										<option value="10">10:00</option>
+										<option value="10.5">10:30</option>
+										<option value="11">11:00</option>
+										<option value="11.5">11:30</option>
+										<option value="12">12:00</option>
+										<option value="12.5">12:30</option>
+										<option value="13">13:00</option>
+										<option value="13.5">13:30</option>
+										<option value="14">14:00</option>
+										<option value="14.5">14:30</option>
+										<option value="15">15:00</option>
+										<option value="15.5">15:30</option>
+										<option value="16">16:00</option>
+										<option value="16.5">16:30</option>
+										<option value="17">17:00</option>
+										<option value="17.5">17:30</option>
+										<option value="18">18:00</option>
+									</select>
+								</div>
+
+								<div class="people-list-wrapper">
+									<span class="icon-user"></span>
+									<select class="people-list">
+										<option value="1">1 people</option>
+										<option value="2">2 people</option>
+										<option value="3">3 people</option>
+										<option value="4">4 people</option>
+										<option value="5">5 people</option>
+										<option value="6">6 people</option>
+										<option value="7">7 people</option>
+										<option value="8">8 people</option>
+										<option value="9">9 people</option>
+										<option value="10">10 people</option>
+									</select>
+								</div>
+							</div>
 							<button class="button">Find a Table</button>
 						</form>
 					</div>
@@ -134,25 +170,19 @@
 		<footer class="footer">
 	<div class="container">
 		<div class="footer__inner">
-			<div class="footer__logo">Renome</div>
+			<div class="footer__logo"> <a href="index.html">Renome</a></div>
 			<div class="footer__copyright">Copyright 2015 Renome by Estetiq</div>
 			<div class="footer__social">
-				<ul>
-					<li class="social-text">Follow US:</li>
-					<li class="social-link facebook">
-						<div class="social-link__wrapper">
-							<a href="#"><span class="icon-facebook"></span></i></a>
-						</div>
+				<li class="footer__social-text">Follow US:</li>
+				<ul class="footer__social-list">
+					<li class="footer__social-link facebook">
+						<a href="#"><span class="icon-facebook"></span></a>
 					</li>
-					<li class="social-link twitter">
-						<div class="social-link__wrapper">
-							<a href="#"><span class="icon-twitter"></span></a>
-						</div>
+					<li class="footer__social-link twitter">
+						<a href="#"><span class="icon-twitter"></span></a>
 					</li>
-					<li class="social-link google">
-						<div class="social-link__wrapper">
-							<a href="#"><span class="icon-google-plus"></span></i></a>
-						</div>
+					<li class="footer__social-link google">
+						<a href="#"><span class="icon-google-plus"></span></a>
 					</li>
 				</ul>
 			</div>

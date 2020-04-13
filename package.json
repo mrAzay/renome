@@ -4,10 +4,14 @@
   "description": "HTML5+CSS3 template for easy start website project'",
   "main": "gulpfile.js",
   "dependencies": {
-    "flatpickr": "^4.6.3",
-    "headhesive": "^1.2.4",
+    "animate.css": "^3.7.2",
+    "dev-ip": "^1.0.1",
+    "ikselect": "^1.1.0",
+    "jquery-form-styler": "^2.0.2",
     "jquery.flipster": "^1.1.4",
     "lightgallery": "^1.6.12",
+    "pickmeup": "^3.2.1",
+    "rateyo": "^2.3.5",
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
