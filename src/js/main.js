@@ -1,7 +1,5 @@
 $(function () {
 
-	devip ();
-
 	$('.burger').click(function (e) {
 		e.preventDefault();
 		$('.nav').slideToggle();
